@@ -18,7 +18,7 @@
         <div class="row">
             <!-- Tarjeta Empleados -->
             <?php if($_SESSION['id_rol'] != 1) { ?>
-                <div class="col s12 m4">
+                <div class="col-xs-12 col-md-4">
                     <div class="card hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="assets/imagenes/empleados.jpg">
@@ -38,7 +38,7 @@
 
             <!-- Tarjeta Flota -->
             <?php if($_SESSION['id_rol'] != 1) { ?>
-                <div class="col s12 m4">
+                <div class="col-xs-12 col-md-4">
                     <div class="card hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="assets/imagenes/camion.jpg">
@@ -58,7 +58,7 @@
 
             <!-- Tarjeta Viajes -->
             <?php if($_SESSION['id_rol'] != 1) { ?>
-                <div class="col s12 m4">
+                <div class="col-xs-12 col-md-4">
                     <div class="card hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="assets/imagenes/viajes.jpg">
@@ -78,7 +78,7 @@
 
             <!-- Tarjeta Reportes -->
             <?php if($_SESSION['id_rol'] == 3) { ?>
-                <div class="col s12 m4">
+                <div class="col-xs-12 col-md-4">
                     <div class="card hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="assets/imagenes/graficos.jpg">
@@ -97,7 +97,7 @@
             <!-- Fin Tarjeta Reportes -->
 
             <!-- Tarjeta Seguimiento -->
-            <div class="col s12 m4">
+            <div class="col-xs-12 col-md-4">
                 <div class="card hoverable">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="assets/imagenes/seguimientos.jpg">
@@ -115,7 +115,7 @@
             <!-- Fin Tarjeta Seguimiento -->        
 
             <!-- Tarjeta Mantenimientos -->
-            <div class="col s12 m4">
+            <div class="col-xs-12 col-md-4">
                 <div class="card hoverable">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="assets/imagenes/mantenimientos.jpg">

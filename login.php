@@ -21,25 +21,27 @@
         </div>
 
         <!-- Contenido de pagina -->
-        <form action="source/validarLogin.php" method="post" class="form-login margin-bottom-10">
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="user" type="text" name="usuario" autocomplete="off" required>
-                    <label for="user" data-success="">Usuario</label> 
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="password" type="password" name="password" required>
-                    <label for="password" data-success="">Clave</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12 center-align">
-                    <input type="submit" class="light-blue darken-1 btn-large" value="entrar">
-                </div>
-            </div>
-        </form>
+		<div class="form-login margin-bottom-10">
+			<form action="source/validarLogin.php" method="post" class="form-horizontal">
+				<div class="form-group">
+					<label for="user" class="col-sm-3 control-label" data-success="">Usuario</label> 
+					<div class="col-sm-9">
+						<input id="user" type="text" name="usuario" autocomplete="off" class="form-control" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="password" class="col-sm-3 control-label" data-success="">Clave</label>
+					<div class="col-sm-9">
+						<input id="password" type="password" name="password" class="form-control" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<input type="submit" class="btn btn-primary" value="entrar">
+					</div>
+				</div>
+			</form>
+		</div>
     </div>
 
     <?php require_once('source/inc/scripts.php'); ?>

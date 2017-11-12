@@ -7,9 +7,9 @@ class ConfigGlobal {
 			// Entorno Local
 			$entorno =  array(
 				"db" => array(
-					"nombre"    	=> "logistica",
+					"nombre"    	=> "dirtytrucksdb",
 					"usuario"   	=> "root",
-					"password"  	=> "",
+					"password"  	=> "1234",
 					"host"			=> "localhost"
 				)
 			);
