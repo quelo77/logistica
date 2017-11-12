@@ -163,6 +163,17 @@ h2.login {
 	color: #03a9f4;
 }
 
+.navbar-logistica {
+	color: rgba(255,255,255,.75) !important;
+	background: #039be6 !important;
+	margin-bottom: 0
+}
+.navbar-logistica a, .navbar-logistica .navbar-text { color: inherit !important }
+.navbar-logistica a:hover { color: #fff !important }
+
+.footer-descripcion, .footer-copyright { color: #fff }
+.footer-descripcion { background: #039be6 }
+.footer-copyright { background: #0693d8 }
 
 /***************** Override de listas *************************/
 .collection .collection-item.avatar .secondary-content {

@@ -30,7 +30,7 @@
             <!-- Fin boton nuevo viaje -->
             <div class="col s12">
                 <!-- Lista Viajes -->
-                <ul class="collection" id="lista-viajes"></ul>
+                <ul class="list-group" id="lista-viajes"></ul>
                 <!-- Fin Lista Viajes -->
             </div>
         </div>             

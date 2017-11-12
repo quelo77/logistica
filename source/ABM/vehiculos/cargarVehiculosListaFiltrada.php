@@ -16,7 +16,7 @@ if(empty($_POST["DOMINIO"])) {
     
     <?php $avatar = empty($vehiculo["AVATAR"]) ? "default" : $vehiculo["AVATAR"]; ?>
 
-    <li class="collection-item avatar">
+    <li class="list-group-item avatar">
         <img src="assets/imagenes/avatares/vehiculos/<?php echo $avatar; ?>.jpg" alt="<?php echo $avatar; ?>" class="circle hide-on-small-only">
         <span class="title"><?php echo $vehiculo["DOMINIO"]; ?></span>
         <p><a class="btn-datos-vehiculo modal-trigger link margin-bottom-10" data-id="<?php echo $vehiculo["DOMINIO"]; ?>" href="#modalDatosVehiculo">Ver ficha completa</a></p>

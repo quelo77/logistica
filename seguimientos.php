@@ -24,9 +24,9 @@
         <!-- Contenido de pagina -->
             <div class="col s12">
                 <!-- Lista Empleados -->
-                <ul class="collection" id="lista-viajes-con-mapa">
+                <ul class="list-group" id="lista-viajes-con-mapa">
                     <?php foreach($viajes as $viaje): ?>
-                        <li class="collection-item center-align">
+                        <li class="list-group-item center-align">
                             <span class="title">
                                 Viaje con destino a: <?php echo $viaje["DIRECCION"]; ?> <?php echo $viaje["NUMERO"]; ?>, <?php echo $viaje["LOCALIDAD"]; ?>, <?php echo $viaje["PAIS"]; ?>
                             </span>

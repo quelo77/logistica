@@ -9,7 +9,7 @@ $viajes = $db->obtenerViajes();
 ?>
 
 <?php foreach($viajes as $viaje): ?>
-    <li class="collection-item avatar">
+    <li class="list-group-item">
         <span class="title">
             Viaje con destino a: <?php echo $viaje["DIRECCION"]; ?> <?php echo $viaje["NUMERO"]; ?>, <?php echo $viaje["LOCALIDAD"]; ?>, <?php echo $viaje["PAIS"]; ?>
         </span>

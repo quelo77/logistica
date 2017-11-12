@@ -23,11 +23,10 @@
                         <div class="panel-body">
                             <img class="img-responsive" src="assets/imagenes/empleados.jpg">
                             <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Empleados<i class="material-icons right">more_vert</i></span>
+                                <span class="card-title activator grey-text text-darken-4">Empleados</span>
                                 <p><a href="empleados.php" class="link">Ver Empleados</a></p>
                             </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Empleados<i class="material-icons right">close</i></span>
                             <p>Ver información acerca de los empleados de esta empresa</p>
                         </div>
                         </div>
@@ -43,11 +42,10 @@
                         <div class="panel-body">
                             <img class="img-responsive" src="assets/imagenes/camion.jpg">
                             <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Flota<i class="material-icons right">more_vert</i></span>
+                                <span class="card-title activator grey-text text-darken-4">Flota</span>
                                 <p><a href="vehiculos.php" class="link">Ver flota de Vehículos</a></p>
                             </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Flota de vehículos<i class="material-icons right">close</i></span>
                             <p>Ver información acerca de los vehículos de esta empresa</p>
                         </div>
                         </div>
@@ -60,14 +58,13 @@
             <?php if($_SESSION['id_rol'] != 1) { ?>
                 <div class="col-xs-12 col-md-4">
                     <div class="panel">
-                        <div class="panel-content">
+                        <div class="panel-body">
                             <img class="img-responsive" src="assets/imagenes/viajes.jpg">
                             <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Viajes<i class="material-icons right">more_vert</i></span>
+                                <span class="card-title activator grey-text text-darken-4">Viajes</span>
                                 <p><a href="viajes.php" class="link">Ver Viajes</a></p>
                             </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Viajes<i class="material-icons right">close</i></span>
                             <p>Ver información acerca de los viajes realizados</p>
                         </div>
                         </div>
@@ -83,11 +80,10 @@
                         <div class="panel-body">
                             <img class="img-responsive" src="assets/imagenes/graficos.jpg">
                             <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Reportes<i class="material-icons right">more_vert</i></span>
+                                <span class="card-title activator grey-text text-darken-4">Reportes</span>
                                 <p><a href="reportes.php" class="link">Ver Reportes</a></p>
                             </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Reportes<i class="material-icons right">close</i></span>
                             <p>Ver información acerca de los reportes de esta empresa</p>
                         </div>
                         </div>
@@ -102,11 +98,10 @@
                     <div class="panel-body">
                         <img class="img-responsive" src="assets/imagenes/seguimientos.jpg">
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Seguimiento<i class="material-icons right">more_vert</i></span>
+                            <span class="card-title activator grey-text text-darken-4">Seguimiento</span>
                             <p><a href="seguimientos.php" class="link">Ver Seguimientos</a></p>
                         </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Seguimientos<i class="material-icons right">close</i></span>
                         <p>Ver información acerca de los seguimientos de los viajes que realiza esta empresa</p>
                     </div>
                     </div>
@@ -120,11 +115,10 @@
                     <div class="panel-body">
                         <img class="img-responsive" src="assets/imagenes/mantenimientos.jpg">
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Mantenimientos<i class="material-icons right">more_vert</i></span>
+                            <span class="card-title activator grey-text text-darken-4">Mantenimientos</span>
                             <p><a href="mantenimientos.php" class="link">Ver Mantenimientos</a></p>
                         </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Mantenimientos<i class="material-icons right">close</i></span>
                         <p>Ver información acerca de los mantenimientos de los vehículos de la empresa</p>
                     </div>
                     </div>
