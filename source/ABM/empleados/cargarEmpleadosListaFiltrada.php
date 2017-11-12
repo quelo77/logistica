@@ -15,9 +15,13 @@ if(empty($_POST["NOMBREEMPLEADO"])) {
 
     <?php $avatar = empty($empleado["AVATAR"]) ? "default" : $empleado["AVATAR"]; ?>
 
-    <li class="collection-item avatar">
-        <img src="assets/imagenes/avatares/empleados/<?php echo $avatar; ?>.jpg" alt="<?php echo $avatar; ?>" class="circle hide-on-small-only">
-        <span class="title"><?php echo $empleado["NOMBRE"]; ?>&nbsp;<?php echo $empleado["APELLIDO"]; ?></span>
+    <li class="list-group-item">
+		<div class="media">
+			<div class="media-left">
+        <img src="assets/imagenes/avatares/empleados/<?php echo $avatar; ?>.jpg" alt="<?php echo $avatar; ?>" class="media-object">
+			</div>
+			<div class="media-body">
+        <h4 class="media-heading"><?php echo $empleado["NOMBRE"]; ?>&nbsp;<?php echo $empleado["APELLIDO"]; ?></h4>
         <p class="grey-text"><?php echo $empleado["CARGO"]; echo " "; ?>
             <span class="tag"><?php echo $empleado["ROL"]; ?></span>
         </p>
@@ -32,5 +36,7 @@ if(empty($_POST["NOMBREEMPLEADO"])) {
                 <i class="material-icons">playlist_add</i>
             </a>
         <?php } ?>
+			</div>
+		</div>
     </li>
 <?php endforeach; ?>

@@ -188,3 +188,8 @@ h2.login {
 
 	}
 }
+
+.tamanio-64px {
+	max-width: 64px !important;
+	height: auto !important;
+}

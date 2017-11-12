@@ -49,9 +49,9 @@
                 </div>
             <?php } ?>
             <!-- Fin boton nuevo vehiculo -->
-            <div class="col s12">
+            <div class="col-xs-12">
                 <!-- Lista Vehiculos -->
-                <ul class="collection" id="lista-vehiculos"></ul>
+                <ul class="list-group" id="lista-vehiculos"></ul>
                 <!-- Fin Lista Vehiculos -->
             </div>
         </div>        

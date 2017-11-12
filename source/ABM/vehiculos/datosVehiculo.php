@@ -18,19 +18,19 @@
     </div>
 <h5 class="grey-text"><?php echo $vehiculo["DOMINIO"]; ?></h5>
 <div class="row">
-	<div class="col s12 m6">
-		<ul class="collection left-align">
-			<li class="collection-item">DOMINIO: <?php echo $vehiculo["DOMINIO"]; ?></li>
-			<li class="collection-item">Marca: <?php echo $vehiculo["MARCA"]; ?></li>
-			<li class="collection-item">Nro.Chasis: <?php echo $vehiculo["NRO_CHASIS"]; ?></li>
+	<div class="col-xs-12 col-md-6">
+		<ul class="list-group left-align">
+			<li class="list-group-item">DOMINIO: <?php echo $vehiculo["DOMINIO"]; ?></li>
+			<li class="list-group-item">Marca: <?php echo $vehiculo["MARCA"]; ?></li>
+			<li class="list-group-item">Nro.Chasis: <?php echo $vehiculo["NRO_CHASIS"]; ?></li>
 		</ul>		
 	</div>
-	<div class="col s12 m6">
-		<ul class="collection left-align">
-			<li class="collection-item">Año: <?php echo $vehiculo["ANO"]; ?></li>
-			<li class="collection-item">Modelo: <?php echo $vehiculo["MODELO"]; ?></li>
-			<li class="collection-item">Nro.Motor: <?php echo $vehiculo["NRO_MOTOR"]; ?></li>
-			<!--<li class="collection-item">Usuario Activo:</li>-->
+	<div class="col-xs-12 col-md-6">
+		<ul class="list-group left-align">
+			<li class="list-group-item">Año: <?php echo $vehiculo["ANO"]; ?></li>
+			<li class="list-group-item">Modelo: <?php echo $vehiculo["MODELO"]; ?></li>
+			<li class="list-group-item">Nro.Motor: <?php echo $vehiculo["NRO_MOTOR"]; ?></li>
+			<!--<li class="list-group-item">Usuario Activo:</li>-->
 		</ul>		
 	</div>
 </div>

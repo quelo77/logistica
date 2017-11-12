@@ -10,7 +10,7 @@ $mantenimientos = $db->obtenerMantenimientos();
 
 <?php foreach($mantenimientos as $mantenimiento): ?>
 
-    <li class="collection-item avatar">
+    <li class="list-group-item">
         <span class="title">Fecha: <?php echo $mantenimiento["FECHA"]; ?></span>
         <p class="title">Vehiculo: <?php echo $mantenimiento["DOMINIO_VEHICULO"]; echo " "; ?></p>
         <p class="title">Trabajo realizado: <?php echo $mantenimiento["COMENTARIO"]; echo " "; ?></p>

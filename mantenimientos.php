@@ -30,7 +30,7 @@
             <!-- Fin boton nuevo mantenimiento -->
             <div class="col s12">
                 <!-- Lista Mantenimientos -->
-                <ul class="collection" id="lista-mantenimientos"></ul>
+                <ul class="list-group" id="lista-mantenimientos"></ul>
                 <!-- Fin Lista mantenimientos -->
             </div>
         </div>        

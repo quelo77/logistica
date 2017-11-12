@@ -11,9 +11,13 @@ $vehiculos = $db->obtenerVehiculos();
 
     <?php $avatar = empty($vehiculo["AVATAR"]) ? "default" : $vehiculo["AVATAR"]; ?>
 
-    <li class="collection-item avatar">
-        <img src="assets/imagenes/avatares/vehiculos/<?php echo $avatar; ?>.jpg" alt="<?php echo $avatar; ?>" class="circle hide-on-small-only">
-        <span class="title"><?php echo $vehiculo["DOMINIO"]; ?></span>
+    <li class="list-group-item">
+		<div class="media">
+			<div class="media-left">
+        <img src="assets/imagenes/avatares/vehiculos/<?php echo $avatar; ?>.jpg" alt="<?php echo $avatar; ?>" class="media-object tamanio-64px">
+			</div>
+			<div class="media-body">
+        <h4 class="media-heading"><?php echo $vehiculo["DOMINIO"]; ?></h4>
         <p><a class="btn-datos-vehiculo modal-trigger link margin-bottom-10" data-id="<?php echo $vehiculo["DOMINIO"]; ?>" href="#modalDatosVehiculo">Ver ficha completa</a></p>
         <!-- 
             Los botones de de Editar y Eliminar Empleado solo estan disponibles si el usuario
@@ -29,5 +33,7 @@ $vehiculos = $db->obtenerVehiculos();
                 <i class="material-icons">playlist_add</i>
             </a>
         <?php } ?>
+			</div>
+		</div>
     </li>
 <?php endforeach; ?>
