@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,700');
 body {
     background: #f6f6f6;
     color: #616161;
     font-family: 'Cabin', sans-serif;
 }
 
-.container {
+/*.container {
     padding: 0 7px;
-}
+}*/
 
 .link:after {
 	content: "»";
@@ -19,11 +20,11 @@ body {
 	left: 10px;
 }
 
-form {
+/*form {
     padding: 5px 10px;
     max-width: 500px;
     margin: 0 auto;
-}
+}*/
 
 .form-login {
 	background: rgb(255, 255, 255);
@@ -173,7 +174,10 @@ h2.login {
 
 .footer-descripcion, .footer-copyright { color: #fff }
 .footer-descripcion { background: #039be6 }
-.footer-copyright { background: #0693d8 }
+.footer-copyright {
+	background: #0693d8;
+	padding-bottom: 14px
+}
 
 /***************** Override de listas *************************/
 .collection .collection-item.avatar .secondary-content {
