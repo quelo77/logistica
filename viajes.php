@@ -21,14 +21,14 @@
         <div class="row">
             <!-- boton nuevo viaje -->
             <?php if($_SESSION['id_rol'] == 3) { ?> <!-- Botón de agregar Viaje sólo habilitado para rol Supervisor -->
-                <div class="col s12 margin-top-10 margin-bottom-10">
+                <div class="col-xs-12 margin-top-10 margin-bottom-10">
                     <div class="center-align">
                         <a href ="#modalNuevoViaje" id="btn-nuevo-viaje-lista" class="light-blue darken-1 waves-effect waves-light btn-large modal-trigger"><i class="material-icons right">input</i>agregar nuevo</a>
                     </div>
                 </div>
             <?php } ?>
             <!-- Fin boton nuevo viaje -->
-            <div class="col s12">
+            <div class="col-xs-12">
                 <!-- Lista Viajes -->
                 <ul class="list-group" id="lista-viajes"></ul>
                 <!-- Fin Lista Viajes -->
@@ -50,12 +50,16 @@
     <!-- Fin Modal Editar de Viaje -->
 
     <!-- Modal Ver Datos de Viaje -->
-    <div id="modalDatosViaje" class="modal modal-fixed-footer">
-        <div class="modal-content center-align"></div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat">Aceptar</a>
-        </div>
-    </div>
+	<div class="modal fade" id="modalDatosViaje" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body"></div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat">Aceptar</a>
+				</div>
+			</div>
+		</div>
+	</div>
     <!-- Fin Modal Ver Datos de Viaje -->
 
     <?php

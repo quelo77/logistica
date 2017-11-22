@@ -12,7 +12,7 @@
 <form id="formNuevoMantenimiento">
     <h4>Agregar nuevo Mantenimiento</h4>
     <div class="row">
-        <div class="input-field col-xs-12 col-md-6">
+        <div class="input-field col s12 m6">
             <select name="DOMINIO_VEHICULO" required>
                 <option value="" disabled selected>Seleccione el Dominio</option>
                 <?php foreach($dominios as $dominio): ?>
@@ -22,7 +22,7 @@
                 <?php endforeach; ?>
             </select>                  
         </div>
-        <div class="input-field col-xs-12 col-md-6">
+        <div class="input-field col s12 m6">
             <select name="EMPLEADO_ENCARGADO" required>
                 <option value="" disabled selected>Seleccione mecanico</option>
                 <?php foreach($empleados as $empleado): ?>
@@ -34,19 +34,19 @@
         </div>
     </div>
     <div class="row">
-        <div class="input-field col-xs-12 col-md-6">
+        <div class="input-field col s12 m6">
             <label for="LABEL">Seleccione la fecha a realizarlo</label>
         </div>
-        <div class="input-field col-xs-12 col-md-6">
+        <div class="input-field col s12 m6">
             <input placeholder="Fecha" type="date" name="FECHA" required>
         </div>
     </div>
     <div class="row">
-        <div class="input-field col-xs-12 col-md-6">
+        <div class="input-field col s12 m6">
             <input name="KM_VEHICULO" type="number" class="validate" required>
             <label for="KM_VEHICULO">Kilometros del Vehículo</label>
         </div>
-        <div class="input-field col-xs-12 col-md-6">
+        <div class="input-field col s12 m6">
             <input name="COSTO" type="number" class="validate" required>
             <label for="COSTO">Costo</label>
         </div>                                                

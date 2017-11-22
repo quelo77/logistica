@@ -21,14 +21,14 @@
         <div class="row">
             <!-- boton nuevo mantenimiento -->
             <?php if($_SESSION['id_rol'] == 3) { ?> <!-- Botón de agregar mantenimiento sólo habilitado para rol Supervisor -->
-                <div class="col s12 margin-top-10 margin-bottom-10">
+                <div class="col-xs-12 margin-top-10 margin-bottom-10">
                     <div class="center-align">
                         <a href ="#modalNuevoMantenimiento" id="btn-nuevo-lista" class="light-blue darken-1 waves-effect waves-light btn-large modal-trigger"><i class="material-icons right">input</i>agregar nuevo</a>
                     </div>
                 </div>
             <?php } ?>
             <!-- Fin boton nuevo mantenimiento -->
-            <div class="col s12">
+            <div class="col-xs-12">
                 <!-- Lista Mantenimientos -->
                 <ul class="list-group" id="lista-mantenimientos"></ul>
                 <!-- Fin Lista mantenimientos -->

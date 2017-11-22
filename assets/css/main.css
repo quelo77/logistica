@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,700');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+.material-icons { font-size: 100% }
+
 body {
     background: #f6f6f6;
     color: #616161;
     font-family: 'Cabin', sans-serif;
 }
 
-/*.container {
+/*
+.container {
     padding: 0 7px;
-}*/
+}
+*/
 
 .link:after {
 	content: "»";
@@ -20,11 +25,13 @@ body {
 	left: 10px;
 }
 
-/*form {
+/*
+form {
     padding: 5px 10px;
     max-width: 500px;
     margin: 0 auto;
-}*/
+}
+*/
 
 .form-login {
 	background: rgb(255, 255, 255);
@@ -68,10 +75,12 @@ body {
 }
 
 /* Tarjetas index */
+/*
 .tarjetas .card-image img {
 	height: 250px;
 	width: 100%;
 }
+*/
 
 /* Login */
 h1.login {
@@ -99,38 +108,28 @@ h2.login {
 
 /* label focus color */
 
-/*
 .input-field input[type=text]:focus + label, .input-field input[type=password]:focus + label {
  color: #03a9f4;
 }
-*/
 /* label underline focus color */
-/*
 .input-field input[type=text]:focus, .input-field input[type=password]:focus {
  border-bottom: 1px solid #03a9f4;
  box-shadow: 0 1px 0 0 #03a9f4;
 }
-*/
 /* valid color */
-/*
 .input-field input[type=text].valid {
  border-bottom: 1px solid #000;
  box-shadow: 0 1px 0 0 #000;
 }
-*/
 /* invalid color */
-/*
 .input-field input[type=text].invalid {
  border-bottom: 1px solid #000;
  box-shadow: 0 1px 0 0 #000;
 }
-*/
 /* icon prefix focus color */
-/*
 .input-field .prefix.active {
  color: #03a9f4;
 }
-*/
 
 /* radio button */
 [type="radio"]:checked + label:after {
@@ -164,23 +163,9 @@ h2.login {
 	color: #03a9f4;
 }
 
-.navbar-logistica {
-	color: rgba(255,255,255,.75) !important;
-	background: #039be6 !important;
-	margin-bottom: 0
-}
-.navbar-logistica a, .navbar-logistica .navbar-text { color: inherit !important }
-.navbar-logistica a:hover { color: #fff !important }
-
-.footer-descripcion, .footer-copyright { color: #fff }
-.footer-descripcion { background: #039be6 }
-.footer-copyright {
-	background: #0693d8;
-	padding-bottom: 14px
-}
 
 /***************** Override de listas *************************/
-.collection .collection-item.avatar .secondary-content {
+.list-group .list-group-item.avatar .secondary-content {
 	top: 25px !important;
 }
 .btn-empleado-editar,
@@ -192,19 +177,14 @@ h2.login {
 
 /* sm ( <= 600px) */
 @media screen and (max-width: 600px) {
-	.collection-item.avatar {
+	.list-group-item.avatar {
 		overflow: auto;
 		padding-left: 10px !important;
 		text-align: center;
 	}
-	.collection .collection-item.avatar .secondary-content {
+	.list-group .list-group-item.avatar .secondary-content {
 		float: none;
 		position: initial;
 
 	}
-}
-
-.tamanio-64px {
-	max-width: 64px !important;
-	height: auto !important;
 }

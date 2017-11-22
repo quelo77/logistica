@@ -12,21 +12,21 @@
     <h4>Agregar nuevo Empleado</h4>
     <!--<input type="hidden" name="ACTIVO" value="">-->
     <div class="row">
-        <div class="input-field col-xs-12 col-md-6">
+        <div class="input-field col s12 m6">
             <input id="nombre" name="NOMBRE" type="text" class="validate" required>
             <label for="nombre">Nombre</label>
         </div>
-        <div class="input-field col-xs-12 col-md-6">
+        <div class="input-field col s12 m6">
             <input id="apellido" name="APELLIDO" type="text" class="validate" required>
             <label for="apellido">Apellido</label>
         </div>
     </div>
     <div class="row">
-        <div class="input-field col-xs-12 col-md-6">
+        <div class="input-field col s12 m6">
             <input name="DNI" type="number" class="validate">
             <label for="DNI">Número de documento</label>
         </div>
-        <div class="input-field col-xs-12 col-md-6">
+        <div class="input-field col s12 m6">
             <input name="SUELDO" type="number" class="validate">
             <label for="SUELDO">Sueldo</label>
         </div>                                                
@@ -42,10 +42,10 @@
         </div>                                                
     </div>                                            
     <div class="row">
-        <div class="input-field col-xs-12 col-md-6">
+        <div class="input-field col s12 m6">
             <input placeholder="Fecha de nacimiento" type="date" name="FECHA_NACIMIENTO">
         </div>
-        <div class="input-field col-xs-12 col-md-6">
+        <div class="input-field col s12 m6">
             <input placeholder="Fecha de Ingreso" type="date" name="FECHA_INGRESO">
         </div>
     </div>
@@ -72,11 +72,11 @@
         </div>
     </div>
     <div class="row">
-        <div class="input-field col-xs-12 col-md-6">
+        <div class="input-field col s12 m6">
             <input name="USUARIO" type="text" class="validate">
             <label for="USUARIO">Usuario</label>
         </div>
-        <div class="input-field col-xs-12 col-md-6">
+        <div class="input-field col s12 m6">
             <input name="PASSWORD" type="password" class="validate">
             <label for="PASSWORD">Password</label>
         </div>

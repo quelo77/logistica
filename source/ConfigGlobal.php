@@ -9,7 +9,7 @@ class ConfigGlobal {
 				"db" => array(
 					"nombre"    	=> "logistica",
 					"usuario"   	=> "root",
-					"password"  	=> "",
+					"password"  	=> "1234",
 					"host"			=> "localhost"
 				)
 			);

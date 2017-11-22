@@ -81,10 +81,10 @@
         </div>
     </div>
     <div class="row">
-        <div class="input-field col-xs-12 col-md-6">
+        <div class="input-field col s12 m6">
             <input  placeholder="Cantidad de Kilometros" type="text" name="CANT_KILOMETROS">
         </div>
-        <div class="input-field col-xs-12 col-md-6">
+        <div class="input-field col s12 m6">
             <select name="ID_ACOPLADO" required>
                 <option value="" disabled selected>Seleccione el Acoplado</option>
                 <?php foreach($acoplados as $acoplado): ?>

@@ -22,15 +22,15 @@
     <div class="container margin-top-20">
         <h2 class="center-align">Seguimientos</h2>
         <!-- Contenido de pagina -->
-            <div class="col s12">
+            <div class="col-xs-12">
                 <!-- Lista Empleados -->
                 <ul class="list-group" id="lista-viajes-con-mapa">
                     <?php foreach($viajes as $viaje): ?>
                         <li class="list-group-item center-align">
-                            <span class="title">
+                            <div class="container">
                                 Viaje con destino a: <?php echo $viaje["DIRECCION"]; ?> <?php echo $viaje["NUMERO"]; ?>, <?php echo $viaje["LOCALIDAD"]; ?>, <?php echo $viaje["PAIS"]; ?>
-                            </span>
-                            <p class="grey-text">Cliente: <?php echo $viaje["CLIENTE"]; ?></p>
+                            </div>
+                            <p class="text-muted">Cliente: <?php echo $viaje["CLIENTE"]; ?></p>
                             <p>
                                 <a href="#modalMapa" data-id="<?php echo $viaje["ID"]; ?>" class="btn-mapa light-blue darken-1 waves-effect waves-light btn-large modal-trigger">Ver Paradas</a>
                             </p>
@@ -40,7 +40,7 @@
                 <!-- Fin Lista Empleados -->
             </div>        
         <div class="row">
-            <div class="col s12">
+            <div class="col-xs-12">
                 
             </div>
         </div>

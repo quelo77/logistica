@@ -46,7 +46,7 @@ var Viajes = function() {
                 method: 'post',
                 dataType: 'html',
                 success: function(data){
-                    $('#modalNuevoViaje .modal-content').html(data);
+                    $('#modalNuevoViaje .modal-body').html(data);
                 }
             }).done(function(){
                 componentesMaterialize.cargar();
@@ -97,7 +97,7 @@ var Viajes = function() {
                 data: idViaje,
                 dataType: 'html',
                 success: function(data){
-                    $('#modalDatosViaje .modal-content').html(data);
+                    $('#modalDatosViaje .modal-body').html(data);
                 }
             });
         });
@@ -113,7 +113,7 @@ var Viajes = function() {
                 data: idViaje,
                 dataType: 'html',
                 success: function(data){
-                    $('#modalEditarViaje .modal-content').html(data);
+                    $('#modalEditarViaje .modal-body').html(data);
                 }
             }).done(function(){
                 btnViajeEditar();

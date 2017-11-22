@@ -28,7 +28,7 @@
  ?>
 <div class="row">
 	<div class="col-xs-12 col-md-6">
-		<ul class="list-group left-align">
+		<ul class="list-group">
 			<li class="list-group-item">Id viaje: <?php echo $viaje["ID"]; ?></li>
 			<li class="list-group-item">Direccion: <?php echo $viaje["DIRECCION"]; ?></li>
 			<li class="list-group-item">Altura: <?php echo $viaje["NUMERO"]; ?></li>
@@ -39,7 +39,7 @@
 		</ul>		
 	</div>
 	<div class="col-xs-12 col-md-6">
-		<ul class="list-group left-align">
+		<ul class="list-group">
 			<li class="list-group-item">Cantidad de Kilometros: <?php echo $viaje["CANT_KILOMETROS"]; ?></li>
 			<li class="list-group-item">Chofer: <?php echo $viaje["CHOFER_NOMBRE"]; echo " "; echo $viaje["CHOFER_APELLIDO"]; ?></li>
 			<li class="list-group-item">Cliente: <?php echo $viaje["CLIENTE"]; ?></li>

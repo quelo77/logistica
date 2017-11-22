@@ -17,7 +17,7 @@
     <div class="center-align">
         <img class="avatar-perfil-usuario" src="assets/imagenes/avatares/empleados/<?php echo $avatar; ?>.jpg" alt="<?php echo $avatar; ?>">
     </div>
-<h5 class="grey-text"><?php echo $empleado["CARGO"]; ?></h5>
+<h5 class="text-muted"><?php echo $empleado["CARGO"]; ?></h5>
 <div class="row">
 	<div class="col-xs-12 col-md-6">
 		<ul class="list-group left-align">
@@ -37,7 +37,7 @@
 			<li class="list-group-item">Nombre de Usuario: <?php echo $empleado["USUARIO"]; ?></li>
 			<li class="list-group-item">Password: <?php echo $empleado["PASSWORD"]; ?></li>
 			<li class="list-group-item">Rol de Usuario: <?php echo $empleado["ROL"]; ?></li>
-			<!--<li class="collection-item">Usuario Activo:</li>-->
+			<!--<li class="list-group-item">Usuario Activo:</li>-->
 		</ul>		
 	</div>
 </div>

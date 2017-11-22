@@ -7,7 +7,7 @@
 
 <!doctype html>
 <html lang="es">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php require_once('source/inc/head.php'); ?>
 
 <body>
@@ -19,54 +19,45 @@
             <!-- Tarjeta Empleados -->
             <?php if($_SESSION['id_rol'] != 1) { ?>
                 <div class="col-xs-12 col-md-4">
-                    <div class="panel">
+                    <div class="panel panel-default">
                         <div class="panel-body">
                             <img class="img-responsive" src="assets/imagenes/empleados.jpg">
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Empleados</span>
-                                <p><a href="empleados.php" class="link">Ver Empleados</a></p>
-                            </div>
-                        <div class="card-reveal">
+							<h2>Empleados</h2>
+							<p><a href="empleados.php" class="link">Ver Empleados</a></p>
+                            <h2>Empleados</h2>
                             <p>Ver información acerca de los empleados de esta empresa</p>
-                        </div>
                         </div>
                     </div>
                 </div>
             <?php } ?>
             <!-- Fin Tarjeta Empleados -->
 
-            <!-- Tarjeta Flota -->
+            <!-- Tarjeta vehiculos -->
             <?php if($_SESSION['id_rol'] != 1) { ?>
                 <div class="col-xs-12 col-md-4">
-                    <div class="panel">
+                    <div class="panel panel-default">
                         <div class="panel-body">
                             <img class="img-responsive" src="assets/imagenes/camion.jpg">
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Flota</span>
-                                <p><a href="vehiculos.php" class="link">Ver flota de Vehículos</a></p>
-                            </div>
-                        <div class="card-reveal">
+                                <h2>Vehiculos</h2>
+                                <p><a href="vehiculos.php" class="link">Ver Vehículos</a></p>
+                            <h2>Grupo de vehiculos</h2>
                             <p>Ver información acerca de los vehículos de esta empresa</p>
-                        </div>
                         </div>
                     </div>
                 </div>
             <?php } ?>
-            <!-- Fin Tarjeta Flota -->
+            <!-- Fin Tarjeta vehiculos-->
 
             <!-- Tarjeta Viajes -->
             <?php if($_SESSION['id_rol'] != 1) { ?>
                 <div class="col-xs-12 col-md-4">
-                    <div class="panel">
+                    <div class="panel panel-default">
                         <div class="panel-body">
                             <img class="img-responsive" src="assets/imagenes/viajes.jpg">
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Viajes</span>
+                                <h2>Viajes</h2>
                                 <p><a href="viajes.php" class="link">Ver Viajes</a></p>
-                            </div>
-                        <div class="card-reveal">
-                            <p>Ver información acerca de los viajes realizados</p>
-                        </div>
+                            <h2>Viajes</h2>
+                            <p>Ver información acerca de los viajes realizados por los vehiculos</p>
                         </div>
                     </div>
                 </div>
@@ -76,16 +67,13 @@
             <!-- Tarjeta Reportes -->
             <?php if($_SESSION['id_rol'] == 3) { ?>
                 <div class="col-xs-12 col-md-4">
-                    <div class="panel">
+                    <div class="panel panel-default">
                         <div class="panel-body">
                             <img class="img-responsive" src="assets/imagenes/graficos.jpg">
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Reportes</span>
+                                <h2>Reportes</h2>
                                 <p><a href="reportes.php" class="link">Ver Reportes</a></p>
-                            </div>
-                        <div class="card-reveal">
+                            <h2>Reportes</h2>
                             <p>Ver información acerca de los reportes de esta empresa</p>
-                        </div>
                         </div>
                     </div>
                 </div>
@@ -94,16 +82,13 @@
 
             <!-- Tarjeta Seguimiento -->
             <div class="col-xs-12 col-md-4">
-                <div class="panel">
+                <div class="panel panel-default">
                     <div class="panel-body">
                         <img class="img-responsive" src="assets/imagenes/seguimientos.jpg">
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Seguimiento</span>
+                            <h1>Seguimiento</h1>
                             <p><a href="seguimientos.php" class="link">Ver Seguimientos</a></p>
-                        </div>
-                    <div class="card-reveal">
+                        <h1>Seguimientos</h1>
                         <p>Ver información acerca de los seguimientos de los viajes que realiza esta empresa</p>
-                    </div>
                     </div>
                 </div>
             </div>
@@ -111,16 +96,13 @@
 
             <!-- Tarjeta Mantenimientos -->
             <div class="col-xs-12 col-md-4">
-                <div class="panel">
+                <div class="panel panel-default">
                     <div class="panel-body">
                         <img class="img-responsive" src="assets/imagenes/mantenimientos.jpg">
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Mantenimientos</span>
+                            <h2>Mantenimientos</h2>
                             <p><a href="mantenimientos.php" class="link">Ver Mantenimientos</a></p>
-                        </div>
-                    <div class="card-reveal">
+                        <h2>Mantenimientos</h2>
                         <p>Ver información acerca de los mantenimientos de los vehículos de la empresa</p>
-                    </div>
                     </div>
                 </div>
             </div>
