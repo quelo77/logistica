@@ -24,7 +24,6 @@
                             <img class="img-responsive" src="assets/imagenes/empleados.jpg">
 							<h2>Empleados</h2>
 							<p><a href="empleados.php" class="link">Ver Empleados</a></p>
-                            <h2>Empleados</h2>
                             <p>Ver información acerca de los empleados de esta empresa</p>
                         </div>
                     </div>
@@ -38,9 +37,8 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <img class="img-responsive" src="assets/imagenes/camion.jpg">
-                                <h2>Vehiculos</h2>
-                                <p><a href="vehiculos.php" class="link">Ver Vehículos</a></p>
-                            <h2>Grupo de vehiculos</h2>
+							<h2>Vehiculos</h2>
+							<p><a href="vehiculos.php" class="link">Ver Vehículos</a></p>
                             <p>Ver información acerca de los vehículos de esta empresa</p>
                         </div>
                     </div>
@@ -56,7 +54,6 @@
                             <img class="img-responsive" src="assets/imagenes/viajes.jpg">
                                 <h2>Viajes</h2>
                                 <p><a href="viajes.php" class="link">Ver Viajes</a></p>
-                            <h2>Viajes</h2>
                             <p>Ver información acerca de los viajes realizados por los vehiculos</p>
                         </div>
                     </div>
@@ -70,9 +67,8 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <img class="img-responsive" src="assets/imagenes/graficos.jpg">
-                                <h2>Reportes</h2>
-                                <p><a href="reportes.php" class="link">Ver Reportes</a></p>
-                            <h2>Reportes</h2>
+							<h2>Reportes</h2>
+							<p><a href="reportes.php" class="link">Ver Reportes</a></p>
                             <p>Ver información acerca de los reportes de esta empresa</p>
                         </div>
                     </div>
@@ -85,9 +81,8 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <img class="img-responsive" src="assets/imagenes/seguimientos.jpg">
-                            <h1>Seguimiento</h1>
-                            <p><a href="seguimientos.php" class="link">Ver Seguimientos</a></p>
-                        <h1>Seguimientos</h1>
+						<h2>Seguimiento</h2>
+						<p><a href="seguimientos.php" class="link">Ver Seguimientos</a></p>
                         <p>Ver información acerca de los seguimientos de los viajes que realiza esta empresa</p>
                     </div>
                 </div>
@@ -99,9 +94,8 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <img class="img-responsive" src="assets/imagenes/mantenimientos.jpg">
-                            <h2>Mantenimientos</h2>
-                            <p><a href="mantenimientos.php" class="link">Ver Mantenimientos</a></p>
-                        <h2>Mantenimientos</h2>
+						<h2>Mantenimientos</h2>
+						<p><a href="mantenimientos.php" class="link">Ver Mantenimientos</a></p>
                         <p>Ver información acerca de los mantenimientos de los vehículos de la empresa</p>
                     </div>
                 </div>
