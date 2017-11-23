@@ -11,3 +11,5 @@
 <script type="text/javascript" src="assets/scripts/Mantenimientos.js"></script>
 <script type="text/javascript" src="assets/scripts/Mapas.js"></script>
 <script type="text/javascript" src="assets/scripts/main.js"></script>
+<script> async defer src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxuCnGF0hh_cimQNf8Nsh9m07pGk8oQA4&callback=initMap"</script>
+
