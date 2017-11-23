@@ -167,10 +167,9 @@ h2.login {
 	color: #c0e6f9 !important;
 	background: #039be6;
 }
-.navbar-global .navbar-text, .navbar-global a { color: inherit !important }
-.navbar-global a:hover, .navbar-global a:focus { color: #fff !important }
+.navbar-global .navbar-text, .navbar-global a, body>footer a { color: inherit !important }
+.navbar-global a:hover, .navbar-global a:focus, body>footer a:hover, body>footer a:focus { color: #fff !important }
 
-body>footer { }
 
 /***************** Override de listas *************************/
 .list-group .list-group-item.avatar .secondary-content {
