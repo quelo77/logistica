@@ -70,6 +70,7 @@
 							<h2 class="h3">Reportes</h2>
 							<p><a href="reportes.php" class="link">Ver Reportes</a></p>
                             <p>Ver información acerca de los reportes de esta empresa</p>
+                            <br>
                         </div>
                     </div>
                 </div>
