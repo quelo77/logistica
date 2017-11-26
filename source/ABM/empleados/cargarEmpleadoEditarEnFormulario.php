@@ -12,7 +12,7 @@
     $roles = $db->obtenerRoles();
 ?>
 
-<form id="formEditarEmpleado">
+<form id="formEditarEmpleado"> 
     <h4>Editar el perfil de <?php echo $empleado["NOMBRE"]; echo " "; echo $empleado["APELLIDO"];?></h4>
     <input type="hidden" name="ID" value="<?php echo $empleado["ID"]; ?>">
     <!--<input type="hidden" name="ACTIVO" value="">-->
