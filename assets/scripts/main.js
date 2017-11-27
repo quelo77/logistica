@@ -1,8 +1,8 @@
 $(document).on('ready', function() {
     'use strict';
 
-    var componentesBootstrap = new ComponentesBootstrap();
-    componentesBootstrap.cargar();
+    var componentesMaterialize = new ComponentesMaterialize();
+    componentesMaterialize.cargar();
 
     var viajes = new Viajes();
     viajes.cargarLista();

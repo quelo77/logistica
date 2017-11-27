@@ -1,7 +1,7 @@
 var Vehiculos = function () {
     'use strict';
 
-    var componentesBootstrap = new ComponentesBootstrap();
+    var componentesMaterialize = new ComponentesMaterialize();
 
     this.cargarLista = function() {
         cargarVehiculosLista();
@@ -26,7 +26,7 @@ var Vehiculos = function () {
                     $('#lista-vehiculos').html(data);
                 }
             }).done(function() {    
-                componentesBootstrap.cargar();
+                componentesMaterialize.cargar();
                 cargarEventos();
                 ponerFocoEnVehiculoEditar();
             });
@@ -42,7 +42,7 @@ var Vehiculos = function () {
                 $('#lista-vehiculos').html(data);
             }
         }).done(function() {    
-            componentesBootstrap.cargar();
+            componentesMaterialize.cargar();
             cargarEventos();
             ponerFocoEnVehiculoEditar();
         });
