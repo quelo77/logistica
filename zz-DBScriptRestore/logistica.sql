@@ -1,38 +1,40 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.14
--- http://www.phpmyadmin.net
+-- version 4.7.0
+-- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Dec 05, 2015 at 02:46 AM
--- Server version: 5.6.26
--- PHP Version: 5.6.12
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 28-11-2017 a las 00:09:38
+-- Versión del servidor: 10.1.25-MariaDB
+-- Versión de PHP: 7.1.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dirtytrucksdb`
+-- Base de datos: `logistica`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `acoplado`
+-- Estructura de tabla para la tabla `acoplado`
 --
 
-CREATE TABLE IF NOT EXISTS `acoplado` (
+CREATE TABLE `acoplado` (
   `ID` int(11) NOT NULL DEFAULT '0',
   `DESCRIPCION` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `acoplado`
+-- Volcado de datos para la tabla `acoplado`
 --
 
 INSERT INTO `acoplado` (`ID`, `DESCRIPCION`) VALUES
@@ -43,16 +45,16 @@ INSERT INTO `acoplado` (`ID`, `DESCRIPCION`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `cargo`
+-- Estructura de tabla para la tabla `cargo`
 --
 
-CREATE TABLE IF NOT EXISTS `cargo` (
+CREATE TABLE `cargo` (
   `ID` int(3) NOT NULL,
   `DESCRIPCION` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `cargo`
+-- Volcado de datos para la tabla `cargo`
 --
 
 INSERT INTO `cargo` (`ID`, `DESCRIPCION`) VALUES
@@ -62,17 +64,17 @@ INSERT INTO `cargo` (`ID`, `DESCRIPCION`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `cliente`
+-- Estructura de tabla para la tabla `cliente`
 --
 
-CREATE TABLE IF NOT EXISTS `cliente` (
+CREATE TABLE `cliente` (
   `ID` int(11) NOT NULL,
   `RAZON_SOCIAL` varchar(25) NOT NULL,
   `ACTIVO` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `cliente`
+-- Volcado de datos para la tabla `cliente`
 --
 
 INSERT INTO `cliente` (`ID`, `RAZON_SOCIAL`, `ACTIVO`) VALUES
@@ -83,10 +85,10 @@ INSERT INTO `cliente` (`ID`, `RAZON_SOCIAL`, `ACTIVO`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `destino`
+-- Estructura de tabla para la tabla `destino`
 --
 
-CREATE TABLE IF NOT EXISTS `destino` (
+CREATE TABLE `destino` (
   `ID` int(11) NOT NULL DEFAULT '0',
   `DIRECCION` varchar(50) DEFAULT NULL,
   `NUMERO` int(11) DEFAULT NULL,
@@ -96,7 +98,7 @@ CREATE TABLE IF NOT EXISTS `destino` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `destino`
+-- Volcado de datos para la tabla `destino`
 --
 
 INSERT INTO `destino` (`ID`, `DIRECCION`, `NUMERO`, `ID_LOCALIDAD`, `ID_PROV`, `ID_PAIS`) VALUES
@@ -108,10 +110,10 @@ INSERT INTO `destino` (`ID`, `DIRECCION`, `NUMERO`, `ID_LOCALIDAD`, `ID_PROV`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `empleado`
+-- Estructura de tabla para la tabla `empleado`
 --
 
-CREATE TABLE IF NOT EXISTS `empleado` (
+CREATE TABLE `empleado` (
   `ID` int(3) NOT NULL,
   `NOMBRE` varchar(25) NOT NULL,
   `APELLIDO` varchar(25) NOT NULL,
@@ -126,38 +128,38 @@ CREATE TABLE IF NOT EXISTS `empleado` (
   `ID_ROL` int(3) NOT NULL,
   `ACTIVO` char(1) NOT NULL DEFAULT '1',
   `AVATAR` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `empleado`
+-- Volcado de datos para la tabla `empleado`
 --
 
 INSERT INTO `empleado` (`ID`, `NOMBRE`, `APELLIDO`, `DNI`, `SEXO`, `FECHA_NACIMIENTO`, `FECHA_INGRESO`, `SUELDO`, `ID_CARGO`, `USUARIO`, `PASSWORD`, `ID_ROL`, `ACTIVO`, `AVATAR`) VALUES
-(1, 'Juan', 'Perez', 36597152, 'M', '1988-01-12', '2015-11-22', '15000.00', 2, 'supervisor', 'lamanuela', 3, '1', 'foto1'),
-(20, 'Roman', 'Aguirre', 2222, 'M', '2015-11-29', '2015-11-07', '1111.00', 1, 'administrador', 'romaguirre22', 2, '1', 'foto2'),
-(22, 'Carlos', 'Roa', 2233456, 'M', '2004-03-13', '2015-11-29', '22000.00', 1, 'chofer', 'guaporoa', 1, '1', 'foto3'),
-(24, 'Jose', 'Chamot', 66567890, 'M', '1988-07-17', '2015-11-29', '13400.00', 1, 'josem', 'DeLaMancha', 2, '1', 'foto4'),
-(25, 'Mauricio', 'Pineda', 9987654, 'M', '1976-11-03', '2015-11-29', '13000.00', 2, 'mauriciom', 'Piñeros', 1, '1', 'foto8'),
-(26, 'Matias', 'Almeyda', 28456300, 'M', '1977-11-29', '2015-11-29', '9000.00', 2, 'almeyda', 'Almejon', 2, '1', 'foto6'),
-(27, 'Roberto', 'Sensini', 8875677, 'M', '1990-04-17', '2015-11-29', '13000.00', 1, 'robert', 'RobertErbet', 2, '1', 'foto7'),
+(1, 'Juan', 'Perez', 36597152, 'M', '1988-01-12', '0000-00-00', '15004.00', 2, 'supervisor', '123', 3, '1', 'foto1'),
+(20, 'Ricardo', 'Aguirre', 2222, 'M', '2015-11-29', '2015-11-07', '1111.00', 1, 'administrador', '123', 2, '1', 'foto2'),
+(22, 'Carlos', 'Roca', 2233456, 'M', '2004-03-13', '2015-11-29', '22001.00', 1, 'chofer', '123', 1, '1', 'foto3'),
+(24, 'Jose', 'Cleip', 66567890, 'M', '1988-07-17', '2015-11-29', '13400.00', 1, 'josem', '123', 2, '1', 'foto4'),
+(25, 'Mauricio', 'Pineda', 9987654, 'M', '1976-11-03', '2015-11-29', '13000.00', 2, 'mauriciom', '1234', 1, '1', 'foto8'),
+(26, 'Matias', 'Ale', 28456300, 'M', '1977-11-29', '2015-11-29', '9000.00', 2, 'almeyda', '123444', 2, '1', 'foto6'),
+(27, 'Roberto', 'Sensini', 8875677, 'M', '1990-04-17', '2015-11-29', '13000.00', 1, 'robert', 'skjsdklfds', 2, '1', 'foto7'),
 (28, 'Claudio', 'Lopez', 1234533, 'M', '1988-10-30', '2015-11-29', '8700.00', 1, 'piojo', 'lopezzzz', 1, '1', 'foto8'),
-(30, 'Pablo', 'Simeone', 14322, 'M', '1970-06-19', '2015-11-12', '11000.00', 2, 'deigote', '221283', 1, '1', 'foto9'),
+(30, 'Pablo', 'Simeone', 14322, 'M', '1970-06-19', '2015-11-12', '11000.00', 2, 'deigote', '123654', 1, '1', 'foto9'),
 (31, 'Gabriel ', 'Gates', 44345677, 'M', '1966-01-24', '2015-11-29', '15000.00', 1, 'gaby', '123333', 2, '1', 'foto10'),
-(45, 'German', 'Polosky', 4468800, 'M', '1993-03-12', '2015-04-11', '12600.00', 1, 'RussyGerman', 'Poloskykokoshky', 1, '1', '');
+(45, 'German', 'Polosky', 4468800, 'M', '1993-03-12', '2015-04-11', '12600.00', 1, 'loco123', '223344', 1, '1', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `localidad`
+-- Estructura de tabla para la tabla `localidad`
 --
 
-CREATE TABLE IF NOT EXISTS `localidad` (
+CREATE TABLE `localidad` (
   `ID` int(11) NOT NULL DEFAULT '0',
   `DESCRIPCION` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `localidad`
+-- Volcado de datos para la tabla `localidad`
 --
 
 INSERT INTO `localidad` (`ID`, `DESCRIPCION`) VALUES
@@ -169,16 +171,16 @@ INSERT INTO `localidad` (`ID`, `DESCRIPCION`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pais`
+-- Estructura de tabla para la tabla `pais`
 --
 
-CREATE TABLE IF NOT EXISTS `pais` (
+CREATE TABLE `pais` (
   `ID` int(11) NOT NULL,
   `DESCRIPCION` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `pais`
+-- Volcado de datos para la tabla `pais`
 --
 
 INSERT INTO `pais` (`ID`, `DESCRIPCION`) VALUES
@@ -188,10 +190,10 @@ INSERT INTO `pais` (`ID`, `DESCRIPCION`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `parada`
+-- Estructura de tabla para la tabla `parada`
 --
 
-CREATE TABLE IF NOT EXISTS `parada` (
+CREATE TABLE `parada` (
   `ID` int(11) NOT NULL,
   `ID_DESTINO` int(11) DEFAULT NULL,
   `LATITUD` varchar(50) DEFAULT NULL,
@@ -199,7 +201,7 @@ CREATE TABLE IF NOT EXISTS `parada` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `parada`
+-- Volcado de datos para la tabla `parada`
 --
 
 INSERT INTO `parada` (`ID`, `ID_DESTINO`, `LATITUD`, `LONGITUD`) VALUES
@@ -215,16 +217,16 @@ INSERT INTO `parada` (`ID`, `ID_DESTINO`, `LATITUD`, `LONGITUD`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `provincia`
+-- Estructura de tabla para la tabla `provincia`
 --
 
-CREATE TABLE IF NOT EXISTS `provincia` (
+CREATE TABLE `provincia` (
   `ID` int(11) NOT NULL,
   `DESCRIPCION` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `provincia`
+-- Volcado de datos para la tabla `provincia`
 --
 
 INSERT INTO `provincia` (`ID`, `DESCRIPCION`) VALUES
@@ -237,17 +239,17 @@ INSERT INTO `provincia` (`ID`, `DESCRIPCION`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rol`
+-- Estructura de tabla para la tabla `rol`
 --
 
-CREATE TABLE IF NOT EXISTS `rol` (
+CREATE TABLE `rol` (
   `ID` int(3) NOT NULL,
   `DESCRIPCION` varchar(25) NOT NULL,
   `NIVEL` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `rol`
+-- Volcado de datos para la tabla `rol`
 --
 
 INSERT INTO `rol` (`ID`, `DESCRIPCION`, `NIVEL`) VALUES
@@ -258,10 +260,10 @@ INSERT INTO `rol` (`ID`, `DESCRIPCION`, `NIVEL`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `seguimiento`
+-- Estructura de tabla para la tabla `seguimiento`
 --
 
-CREATE TABLE IF NOT EXISTS `seguimiento` (
+CREATE TABLE `seguimiento` (
   `ID` int(3) NOT NULL,
   `ID_VIAJE` int(3) NOT NULL,
   `FECHA` date NOT NULL,
@@ -271,13 +273,27 @@ CREATE TABLE IF NOT EXISTS `seguimiento` (
   `COORY` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `seguimiento`
+--
+
+INSERT INTO `seguimiento` (`ID`, `ID_VIAJE`, `FECHA`, `LT_COMBUSTIBLE`, `LUGAR_CARGA`, `COORX`, `COORY`) VALUES
+(1, 1, '2017-11-08', 254, 'algo', '-34.692239', '-58.585623'),
+(2, 2, '2017-11-09', 200, 'otro', '-36.633720', '-64.254454'),
+(3, 3, '2017-11-25', 205, 'casa', '-43.162433', '-66.095400'),
+(4, 4, '2017-11-12', 190, 'otro', '-36.633720', '-64.254454'),
+(5, 5, '2017-11-25', 204, 'bodega', '-34.692239', ' -58.585623'),
+(6, 6, '2017-11-12', 235, 'casa', '-33.155451', '-71.459791'),
+(7, 7, '2017-11-25', 260, 'otro', '-32.885774', '-68.887323'),
+(8, 8, '2017-11-12', 253, 'otro', '-34.601190', '-58.455416');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `service`
+-- Estructura de tabla para la tabla `service`
 --
 
-CREATE TABLE IF NOT EXISTS `service` (
+CREATE TABLE `service` (
   `ID` int(3) NOT NULL,
   `DOMINIO_VEHICULO` varchar(25) NOT NULL,
   `FECHA` date NOT NULL,
@@ -287,10 +303,10 @@ CREATE TABLE IF NOT EXISTS `service` (
   `ACTIVO` int(1) NOT NULL DEFAULT '1',
   `EMPLEADO_ENCARGADO` int(3) NOT NULL,
   `REALIZADO` int(1) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `service`
+-- Volcado de datos para la tabla `service`
 --
 
 INSERT INTO `service` (`ID`, `DOMINIO_VEHICULO`, `FECHA`, `KM_VEHICULO`, `COSTO`, `COMENTARIO`, `ACTIVO`, `EMPLEADO_ENCARGADO`, `REALIZADO`) VALUES
@@ -304,10 +320,10 @@ INSERT INTO `service` (`ID`, `DOMINIO_VEHICULO`, `FECHA`, `KM_VEHICULO`, `COSTO`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `vehiculo`
+-- Estructura de tabla para la tabla `vehiculo`
 --
 
-CREATE TABLE IF NOT EXISTS `vehiculo` (
+CREATE TABLE `vehiculo` (
   `DOMINIO` varchar(25) NOT NULL,
   `MODELO` varchar(25) NOT NULL,
   `ANO` int(5) NOT NULL,
@@ -319,10 +335,11 @@ CREATE TABLE IF NOT EXISTS `vehiculo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `vehiculo`
+-- Volcado de datos para la tabla `vehiculo`
 --
 
 INSERT INTO `vehiculo` (`DOMINIO`, `MODELO`, `ANO`, `MARCA`, `NRO_CHASIS`, `NRO_MOTOR`, `ACTIVO`, `AVATAR`) VALUES
+('', '', 0, '', 0, 0, 0, ''),
 ('AXE-752', 'FMX', 1999, 'Iveco', 688963, 146398, 1, 'foto1'),
 ('AXJ-777', 'TECTOR ATTACK', 2001, 'Iveco', 654987, 453987, 1, 'foto2'),
 ('CIH-796', 'TECTOR', 2012, 'Iveco', 255789, 236694, 1, 'foto4'),
@@ -334,10 +351,10 @@ INSERT INTO `vehiculo` (`DOMINIO`, `MODELO`, `ANO`, `MARCA`, `NRO_CHASIS`, `NRO_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `viaje`
+-- Estructura de tabla para la tabla `viaje`
 --
 
-CREATE TABLE IF NOT EXISTS `viaje` (
+CREATE TABLE `viaje` (
   `ID` int(11) NOT NULL,
   `DOMINIO_VEHICULO` varchar(25) NOT NULL,
   `ID_DESTINO` int(11) NOT NULL,
@@ -348,10 +365,10 @@ CREATE TABLE IF NOT EXISTS `viaje` (
   `CANT_KILOMETROS` int(11) NOT NULL,
   `ID_TIPO_ACOPLADO` int(11) NOT NULL,
   `ID_EMPLEADO` int(11) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `viaje`
+-- Volcado de datos para la tabla `viaje`
 --
 
 INSERT INTO `viaje` (`ID`, `DOMINIO_VEHICULO`, `ID_DESTINO`, `ID_CLIENTE`, `FECHA_PROGRAMADA`, `FECHA_INICIO`, `FECHA_FIN`, `CANT_KILOMETROS`, `ID_TIPO_ACOPLADO`, `ID_EMPLEADO`) VALUES
@@ -368,38 +385,38 @@ INSERT INTO `viaje` (`ID`, `DOMINIO_VEHICULO`, `ID_DESTINO`, `ID_CLIENTE`, `FECH
 -- --------------------------------------------------------
 
 --
--- Table structure for table `viaje_chofer`
+-- Estructura de tabla para la tabla `viaje_chofer`
 --
 
-CREATE TABLE IF NOT EXISTS `viaje_chofer` (
+CREATE TABLE `viaje_chofer` (
   `ID_VIAJE` int(3) NOT NULL,
   `ID_CHOFER` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Indexes for dumped tables
+-- Índices para tablas volcadas
 --
 
 --
--- Indexes for table `acoplado`
+-- Indices de la tabla `acoplado`
 --
 ALTER TABLE `acoplado`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `cargo`
+-- Indices de la tabla `cargo`
 --
 ALTER TABLE `cargo`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `cliente`
+-- Indices de la tabla `cliente`
 --
 ALTER TABLE `cliente`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `destino`
+-- Indices de la tabla `destino`
 --
 ALTER TABLE `destino`
   ADD PRIMARY KEY (`ID`),
@@ -408,62 +425,62 @@ ALTER TABLE `destino`
   ADD KEY `ID_LOCALIDAD` (`ID_LOCALIDAD`);
 
 --
--- Indexes for table `empleado`
+-- Indices de la tabla `empleado`
 --
 ALTER TABLE `empleado`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `localidad`
+-- Indices de la tabla `localidad`
 --
 ALTER TABLE `localidad`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `pais`
+-- Indices de la tabla `pais`
 --
 ALTER TABLE `pais`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `parada`
+-- Indices de la tabla `parada`
 --
 ALTER TABLE `parada`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `ID_DESTINO` (`ID_DESTINO`);
 
 --
--- Indexes for table `provincia`
+-- Indices de la tabla `provincia`
 --
 ALTER TABLE `provincia`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `rol`
+-- Indices de la tabla `rol`
 --
 ALTER TABLE `rol`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `seguimiento`
+-- Indices de la tabla `seguimiento`
 --
 ALTER TABLE `seguimiento`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `service`
+-- Indices de la tabla `service`
 --
 ALTER TABLE `service`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `vehiculo`
+-- Indices de la tabla `vehiculo`
 --
 ALTER TABLE `vehiculo`
   ADD PRIMARY KEY (`DOMINIO`);
 
 --
--- Indexes for table `viaje`
+-- Indices de la tabla `viaje`
 --
 ALTER TABLE `viaje`
   ADD PRIMARY KEY (`ID`),
@@ -472,41 +489,41 @@ ALTER TABLE `viaje`
   ADD KEY `ID_EMPLEADO` (`ID_EMPLEADO`);
 
 --
--- Indexes for table `viaje_chofer`
+-- Indices de la tabla `viaje_chofer`
 --
 ALTER TABLE `viaje_chofer`
   ADD PRIMARY KEY (`ID_VIAJE`,`ID_CHOFER`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT for table `empleado`
+-- AUTO_INCREMENT de la tabla `empleado`
 --
 ALTER TABLE `empleado`
-  MODIFY `ID` int(3) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=46;
+  MODIFY `ID` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 --
--- AUTO_INCREMENT for table `seguimiento`
+-- AUTO_INCREMENT de la tabla `seguimiento`
 --
 ALTER TABLE `seguimiento`
-  MODIFY `ID` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
--- AUTO_INCREMENT for table `service`
+-- AUTO_INCREMENT de la tabla `service`
 --
 ALTER TABLE `service`
-  MODIFY `ID` int(3) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+  MODIFY `ID` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
--- AUTO_INCREMENT for table `viaje`
+-- AUTO_INCREMENT de la tabla `viaje`
 --
 ALTER TABLE `viaje`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
--- Constraints for dumped tables
+-- Restricciones para tablas volcadas
 --
 
 --
--- Constraints for table `destino`
+-- Filtros para la tabla `destino`
 --
 ALTER TABLE `destino`
   ADD CONSTRAINT `destino_ibfk_1` FOREIGN KEY (`ID_PROV`) REFERENCES `provincia` (`ID`),
@@ -514,18 +531,19 @@ ALTER TABLE `destino`
   ADD CONSTRAINT `destino_ibfk_3` FOREIGN KEY (`ID_LOCALIDAD`) REFERENCES `localidad` (`ID`);
 
 --
--- Constraints for table `parada`
+-- Filtros para la tabla `parada`
 --
 ALTER TABLE `parada`
   ADD CONSTRAINT `parada_ibfk_1` FOREIGN KEY (`ID_DESTINO`) REFERENCES `destino` (`ID`);
 
 --
--- Constraints for table `viaje`
+-- Filtros para la tabla `viaje`
 --
 ALTER TABLE `viaje`
   ADD CONSTRAINT `viaje_ibfk_1` FOREIGN KEY (`ID_TIPO_ACOPLADO`) REFERENCES `acoplado` (`ID`),
   ADD CONSTRAINT `viaje_ibfk_2` FOREIGN KEY (`ID_DESTINO`) REFERENCES `destino` (`ID`),
   ADD CONSTRAINT `viaje_ibfk_3` FOREIGN KEY (`ID_EMPLEADO`) REFERENCES `empleado` (`ID`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -24,16 +24,18 @@ $vehiculos = $db->obtenerVehiculos();
 					que esta navegando la aplicación tiene rol de Supervisor 
 				-->
 				<!-- Eliminar -->
-				<?php if($_SESSION['id_rol'] == 3) { ?>
-					<a href ="#!" data-id-eliminar="<?php echo $vehiculo["DOMINIO"]; ?>" class="btn-baja-vehiculo secondary-content light-blue lighten-1 waves-effect waves-light btn tooltipped" data-position="right" data-tooltip="Eliminar">
-						<i class="material-icons">delete</i>
-					</a>
-					<!-- Editar -->
-					<a href ="#modalEditarVehiculo" data-id="<?php echo $vehiculo["DOMINIO"]; ?>" class="btn-editar-lista secondary-content light-blue lighten-1 waves-effect waves-light btn btn-empleado-editar tooltipped modal-trigger" data-position="left" data-tooltip="Editar">
-						<i class="material-icons">playlist_add</i>
-					</a>
-				<?php } ?>
 			</div>
+			<?php if($_SESSION['id_rol'] == 3) { ?>
+			<div class="media-right">
+				<a href ="#!" data-id-eliminar="<?php echo $vehiculo["DOMINIO"]; ?>" class="btn-baja-vehiculo secondary-content light-blue lighten-1 waves-effect waves-light btn btn-primary tooltipped" data-position="right" data-tooltip="Eliminar">
+					<i class="material-icons">delete</i>
+				</a>
+				<!-- Editar -->
+				<a href ="#modalEditarVehiculo" data-id="<?php echo $vehiculo["DOMINIO"]; ?>" class="btn-editar-lista secondary-content light-blue lighten-1 waves-effect waves-light btn btn-primary btn-empleado-editar tooltipped modal-trigger" data-position="left" data-tooltip="Editar">
+					<i class="material-icons">playlist_add</i>
+				</a>
+			</div>
+			<?php } ?>
 		</div>
     </li>
 <?php endforeach; ?>
