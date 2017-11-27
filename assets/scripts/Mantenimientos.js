@@ -1,7 +1,7 @@
 var Mantenimientos = function () {
     'use strict';
 
-    var componentesMaterialize = new ComponentesMaterialize();
+    var componentesBootstrap = new componentesBootstrap();
 
     this.cargarLista = function() {
         cargarMantenimientosLista();
@@ -26,7 +26,7 @@ var Mantenimientos = function () {
                 data = JSON.parse(data);
 
                 $(data).map(function(index, elemento){
-                    Materialize.toast("[Atención Service] dominio: " + elemento.dominio + " Comentario: " + elemento.comentario, tiempo += intervalo);
+                    Bootstrap.toast("[Atención Service] dominio: " + elemento.dominio + " Comentario: " + elemento.comentario, tiempo += intervalo);
                 });
             }
         });
@@ -41,7 +41,7 @@ var Mantenimientos = function () {
                 $('#lista-mantenimientos').html(data);
             }
         }).done(function() {    
-            componentesMaterialize.cargar();
+            componentesBootstrap.cargar();
             cargarEventos();
         });
     }
@@ -179,7 +179,7 @@ var Mantenimientos = function () {
                     $('#modalNuevoMantenimiento .modal-content').html(data);
                 }
             }).done(function(){
-                componentesMaterialize.cargar();
+                componentesBootstrap.cargar();
                 btnMantenimientoNuevo();
             });
         });

@@ -1,7 +1,7 @@
 var Empleados = function () {
 	'use strict';
 
-	var componentesMaterialize = new ComponentesMaterialize();
+	var componentesBootstrap = new ComponentesBootstrap();
 
     this.cargarLista = function() {
         cargarEmpleadosLista();
@@ -30,7 +30,7 @@ var Empleados = function () {
                     $('#lista-empleados').html(data);
                 }
             }).done(function() {    
-                componentesMaterialize.cargar();
+                componentesBootstrap.cargar();
                 cargarEventos();
                 ponerFocoEnEmpleadoEditar();
                 $('#modalCargando').closeModal();
@@ -50,7 +50,7 @@ var Empleados = function () {
 		        $('#lista-empleados').html(data);
 		    }
 		}).done(function() {	
-			componentesMaterialize.cargar();
+			componentesBootstrap.cargar();
 			cargarEventos();
 			ponerFocoEnEmpleadoEditar();
             $('#modalCargando').closeModal();
@@ -116,7 +116,7 @@ var Empleados = function () {
                 }
             }).done(function(){
                 btnEmpleadoEditar();
-                componentesMaterialize.cargar();
+                componentesBootstrap.cargar();
             });
         });
     }    
@@ -132,7 +132,7 @@ var Empleados = function () {
                     $('#modalNuevoEmpleado .modal-content').html(data);
                 }
             }).done(function(){
-                componentesMaterialize.cargar();
+                componentesBootstrap.cargar();
                 btnEmpleadoNuevo();
             });
         });

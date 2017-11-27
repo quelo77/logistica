@@ -1,7 +1,7 @@
 var Viajes = function() {
 	'use strict';
 
-	var componentesMaterialize = new ComponentesMaterialize();
+	var componentesBootstrap = new ComponentesBootstrap();
 
     this.cargarLista = function() {
         cargarViajesLista();
@@ -18,7 +18,7 @@ var Viajes = function() {
 		        $('#lista-viajes').html(data);
 		    }
 		}).done(function() {
-			componentesMaterialize.cargar();
+			componentesBootstrap.cargar();
 			cargarEventos();
 			ponerFocoEnViajeEditar();
 		});    	
@@ -49,7 +49,7 @@ var Viajes = function() {
                     $('#modalNuevoViaje .modal-body').html(data);
                 }
             }).done(function(){
-                componentesMaterialize.cargar();
+                componentesBootstrap.cargar();
                 btnViajeNuevo();
             });
         });
@@ -117,7 +117,7 @@ var Viajes = function() {
                 }
             }).done(function(){
                 btnViajeEditar();
-                componentesMaterialize.cargar();
+                componentesBootstrap.cargar();
             });
         });
     }
