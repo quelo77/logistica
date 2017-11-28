@@ -23,19 +23,19 @@
         <!-- Contenido de pagina -->
         <form action="source/validarLogin.php" method="post" class="form-login form-horizontal">
             <div class="form-group">
-				<label for="user" class="col-md-3 control-label">Usuario</label> 
-                <div class="col-xs-12 col-md-9">
+				<label for="user" class="col-sm-3 control-label">Usuario</label> 
+                <div class="col-xs-12 col-sm-9">
                     <input id="user" type="text" name="usuario" class="form-control" autocomplete="off" required>
                 </div>
             </div>
             <div class="form-group">
-				<label for="password" class="col-md-3 control-label">Clave</label>
-                <div class="col-xs-12 col-md-9">
+				<label for="password" class="col-sm-3 control-label">Clave</label>
+                <div class="col-xs-12 col-sm-9">
                     <input id="password" type="password" name="password" class="form-control" required>
                 </div>
             </div>
             <div class="form-group">
-                <div class="col-md-offset-3 col-md-9">
+                <div class="col-sm-offset-3 col-sm-9">
                     <input type="submit" class="btn btn-primary btn-large" value="Entrar">
                 </div>
             </div>
