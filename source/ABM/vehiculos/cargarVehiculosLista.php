@@ -14,7 +14,7 @@ $vehiculos = $db->obtenerVehiculos();
     <li class="list-group-item">
 		<div class="media">
 			<div class="media-left">
-				<img src="assets/imagenes/avatares/vehiculos/<?php echo $avatar; ?>.jpg" alt="<?php echo $avatar; ?>" class="circle hide-on-small-only">
+				<img src="assets/imagenes/avatares/vehiculos/<?php echo $avatar; ?>.jpg" alt="<?php echo $avatar; ?>" class="img-circle">
 			</div>
 			<div class="media-body">
 				<h4 class="media-heading"><?php echo $vehiculo["DOMINIO"]; ?></h4>

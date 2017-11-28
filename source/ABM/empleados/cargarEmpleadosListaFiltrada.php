@@ -18,7 +18,7 @@ if(empty($_POST["NOMBREEMPLEADO"])) {
     <li class="list-group-item avatar">
 		<div class="media">
 			<div class="media-left">
-        		<img src="assets/imagenes/avatares/empleados/<?php echo $avatar; ?>.jpg" alt="<?php echo $avatar; ?>" class="circle hide-on-small-only">
+        		<img src="assets/imagenes/avatares/empleados/<?php echo $avatar; ?>.jpg" alt="<?php echo $avatar; ?>" class="img-circle">
 			</div>
 			<div class="media-body">
 				<span class="title"><?php echo $empleado["NOMBRE"]; ?>&nbsp;<?php echo $empleado["APELLIDO"]; ?></span>
@@ -26,17 +26,19 @@ if(empty($_POST["NOMBREEMPLEADO"])) {
 					<span class="tag"><?php echo $empleado["ROL"]; ?></span>
 				</p>
 				<p><a class="btn-datos-empleado modal-trigger link margin-bottom-10" data-id="<?php echo $empleado["ID"]; ?>" href="#modalDatosEmpleado">Ver perfil completo</a></p>
-				<?php if($_SESSION['id_rol'] == 3) { ?>
-					<!-- Eliminar -->
-					<a href ="#modalEditarEmpleado" data-id="<?php echo $empleado["ID"]; ?>" class="btn-editar-lista secondary-content light-blue lighten-1 waves-effect waves-light btn btn-empleado-editar tooltipped modal-trigger" data-position="left" data-tooltip="Editar">
-					<a href ="#!" data-id-eliminar="<?php echo $empleado["ID"]; ?>" class="btn-baja-empleado secondary-content light-blue lighten-1 waves-effect waves-light btn tooltipped" data-position="right" data-tooltip="Eliminar">
-						<i class="material-icons">delete</i>
-					</a>
-					<!-- Editar -->
-						<i class="material-icons">playlist_add</i>
-					</a>
-				<?php } ?>
 			</div>
+			<?php if($_SESSION['id_rol'] == 3) { ?>
+			<div class="media-right">
+				<!-- Eliminar -->
+				<a href ="#modalEditarEmpleado" data-id="<?php echo $empleado["ID"]; ?>" class="btn-editar-lista secondary-content light-blue lighten-1 waves-effect waves-light btn btn-empleado-editar tooltipped modal-trigger" data-position="left" data-tooltip="Editar">
+				<a href ="#!" data-id-eliminar="<?php echo $empleado["ID"]; ?>" class="btn-baja-empleado secondary-content light-blue lighten-1 waves-effect waves-light btn tooltipped" data-position="right" data-tooltip="Eliminar">
+					<i class="material-icons">delete</i>
+				</a>
+				<!-- Editar -->
+					<i class="material-icons">playlist_add</i>
+				</a>
+			</div>
+			<?php } ?>
 		</div>
     </li>
 <?php endforeach; ?>

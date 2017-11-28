@@ -15,9 +15,7 @@
 				<strong>Bienvenido, <?php echo $_SESSION['nombre']; ?></strong>
 			</div>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#!"><strong><?php echo $_SESSION['nombre']; ?></strong></a></li>
 				<li><a href="#!">Mi Perfil</a></li>
-				<li><a href="#!">Configuración</a></li>
 				<li><a href="salir.php"><i class="material-icons">settings_power</i>Salir</a></li>
 			</ul>
 		</div>
