@@ -44,11 +44,15 @@
         <!-- Fin Contenido de pagina -->        
     </div>
     <!-- Modal Mapa -->
-    <div id="modalMapa" class="modal">
-        <div class="modal-content text-center">
-            <div id="contenedor-mapa"></div>
-        </div>
-    </div>
+	<div class="modal fade" id="modalMapa" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+            		<div id="contenedor-mapa"></div>
+				</div>
+			</div>
+		</div>
+	</div>
     <!-- Fin Modal Mapa -->
 
     <?php

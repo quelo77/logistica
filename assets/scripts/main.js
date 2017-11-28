@@ -17,7 +17,7 @@ $(document).on('ready', function() {
 
     var mantenimientos = new Mantenimientos();
     mantenimientos.cargarLista();
-    mantenimientos.cargarAlarmas();
+//    mantenimientos.cargarAlarmas();
     
     console.info("DOM ready");
 });

@@ -81,9 +81,6 @@
 	<!-- Fin Modal Ver Datos de Empleado -->
 
 	<!-- Modal Editar Empleado -->
-	<div id="modalEditarEmpleado" class="modal">
-		<div class="modal-content text-center"></div>
-	</div>
 	<div class="modal fade" id="modalEditarEmpleado" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">

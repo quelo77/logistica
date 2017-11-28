@@ -102,7 +102,7 @@ var Vehiculos = function () {
                 data: dominioVehiculo,
                 dataType: 'html',
                 success: function(data){
-                    $('#modalEditarVehiculo .modal-content').html(data);
+                    $('#modalEditarVehiculo .modal-body').html(data);
                 }
             }).done(function(){
                 btnVehiculoEditar();
@@ -118,7 +118,7 @@ var Vehiculos = function () {
                 method: 'post',
                 dataType: 'html',
                 success: function(data){
-                    $('#modalNuevoVehiculo .modal-content').html(data);
+                    $('#modalNuevoVehiculo .modal-body').html(data);
                 }
             }).done(function(){
                 btnVehiculoNuevo();
@@ -138,7 +138,7 @@ var Vehiculos = function () {
                 data: dominiovehiculo,
                 dataType: 'html',
                 success: function(data){
-                    $('#modalDatosVehiculo .modal-content').html(data);
+                    $('#modalDatosVehiculo .modal-body').html(data);
                 }
             });
         });

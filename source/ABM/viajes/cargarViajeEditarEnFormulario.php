@@ -20,8 +20,8 @@
     <input type="hidden" name="ID" value="<?php echo $viaje["ID"]; ?>">
     <!--<input type="hidden" name="ACTIVO" value="">-->
     <div class="row">
-        <div class="input-field col-xs-12">
-            <select name="DOMINIO_VEHICULO" required>
+        <div class="col-xs-12">
+            <select name="DOMINIO_VEHICULO" class="form-control" required>
                 <option value="" disabled selected>Seleccione el Vehículo</option>
                 <?php foreach($vehiculos as $vehiculo): ?>
                     <?php if($vehiculo["DOMINIO"] == $viaje["DOMINIO"]) { ?>
@@ -38,8 +38,8 @@
         </div>
     </div>
     <div class="row">
-        <div class="input-field col-xs-12">
-            <select name="ID_EMPLEADO" required>
+        <div class="col-xs-12">
+            <select name="ID_EMPLEADO" class="form-control" required>
                 <option value="" disabled selected>Seleccione el Chofer</option>
                 <?php foreach($choferes as $chofer): ?>
                     <?php if($chofer["ID"] == $viaje["CHOFER_ID"]) {?>
@@ -56,8 +56,8 @@
         </div>        
     </div>    
     <div class="row">
-        <div class="input-field col-xs-12">
-            <select name="ID_DESTINO" required>
+        <div class="col-xs-12">
+            <select name="ID_DESTINO" class="form-control" required>
                 <option value="" disabled selected>Seleccione el Destino</option>
                 <?php foreach($destinos as $destino): ?>
                     <?php if($destino["ID"] == $viaje["DESTINO_ID"]) {?>
@@ -74,8 +74,8 @@
         </div>
     </div>
     <div class="row">
-        <div class="input-field col-xs-12">
-            <select name="ID_CLIENTE" required>
+        <div class="col-xs-12">
+            <select name="ID_CLIENTE" class="form-control" required>
                 <option value="" disabled selected>Seleccione el Cliente</option>
                 <?php foreach($clientes as $cliente): ?>
                     <?php if($cliente["ID"] == $viaje["CLIENTE_ID"]) {?>
@@ -92,29 +92,31 @@
         </div>
     </div>
     <div class="row">
-        <div class="input-field col-xs-12">
+        <div class="col-xs-12">
             <p class="text-center">Ingrese Fecha Programada</p>
-            <input type="date" name="FECHA_PROGRAMADA" value="<?php echo $viaje["FECHA_PROGRAMADA"]; ?>">
+            <input type="date" name="FECHA_PROGRAMADA" value="<?php echo $viaje["FECHA_PROGRAMADA"]; ?>" class="form-control">
         </div>        
     </div>
     <div class="row">
-        <div class="input-field col-xs-12">
+        <div class="col-xs-12">
             <p class="text-center">Ingrese Fecha Inicio</p>
-            <input type="date" name="FECHA_INICIO" value="<?php echo $viaje["FECHA_INICIO"]; ?>">
+            <input type="date" name="FECHA_INICIO" value="<?php echo $viaje["FECHA_INICIO"]; ?>" class="form-control">
         </div>        
     </div>
     <div class="row">
-        <div class="input-field col-xs-12">
+        <div class="col-xs-12">
             <p class="text-center">Ingrese Fecha Fin</p>
-            <input type="date" name="FECHA_FIN" value="<?php echo $viaje["FECHA_FIN"]; ?>">
+            <input type="date" name="FECHA_FIN" value="<?php echo $viaje["FECHA_FIN"]; ?>" class="form-control">
         </div>
     </div>
     <div class="row">
-        <div class="input-field col-xs-12 col-sm-6">
-            <input  placeholder="Cantidad de Kilometros" type="text" name="CANT_KILOMETROS" value="<?php echo $viaje["CANT_KILOMETROS"]; ?>">
+        <div class="col-xs-12 col-sm-6">
+			<label for="CANT_KILOMETROS" class="sr-only">Cantidad de Kilometros</label>
+            <input  placeholder="Cantidad de Kilometros" type="text" name="CANT_KILOMETROS" value="<?php echo $viaje["CANT_KILOMETROS"]; ?>" class="form-control">
         </div>
-        <div class="input-field col-xs-12 col-sm-6">
-            <select name="ID_ACOPLADO" required>
+        <div class="col-xs-12 col-sm-6">
+			<label for="ID_ACOPLADO" class="sr-only">Acoplado</label>
+            <select name="ID_ACOPLADO" class="form-control" required>
                 <option value="" disabled selected>Seleccione el Acoplado</option>
                 <?php foreach($acoplados as $acoplado): ?>
                     <?php if($acoplado["ID"] == $viaje["ACOPLADO_ID"]) {?>
@@ -131,7 +133,7 @@
         </div>        
     </div>        
     <div class="row">
-        <div class="input-field col-xs-12">
+        <div class="col-xs-12">
             <a href="#!" id="btn-editar-viaje" class="modal-action light-blue darken-1 waves-effect waves-light btn-large">Actualizar Viaje</a>
         </div>
     </div>

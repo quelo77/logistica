@@ -60,23 +60,35 @@
 		</div>        
 	</div>
 	<!-- Modal Nuevo Vehiculo -->
-	<div id="modalNuevoVehiculo" class="modal">
-		<div class="modal-content text-center"></div>
+	<div class="modal fade" id="modalNuevoVehiculo" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body"></div>
+			</div>
+		</div>
 	</div>
 	<!-- Fin Modal Nuevo Vehiculo -->
 
 	<!-- Modal Ver Datos de Vehiculo -->
-	<div id="modalDatosVehiculo" class="modal modal-fixed-footer">
-		<div class="modal-content text-center"></div>
-		<div class="modal-footer">
-			<a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat ">Aceptar</a>
+	<div class="modal fade" id="modalDatosVehiculo" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body"></div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat ">Aceptar</a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- Fin Modal Ver Datos de Vehiculo -->
 
 	<!-- Modal Editar Vehiculo -->
-	<div id="modalEditarVehiculo" class="modal">
-		<div class="modal-content text-center"></div>
+	<div class="modal fade" id="modalEditarVehiculo" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body"></div>
+			</div>
+		</div>
 	</div>
 	<!-- Fin Modal Editar de Vehiculo -->    
 	<!-- Fin Contenido de pagina -->
