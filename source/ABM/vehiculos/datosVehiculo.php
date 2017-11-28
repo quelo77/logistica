@@ -13,7 +13,7 @@
 ?>
 
 <h4>Ficha del Vehículo</h4>
-    <div class="center-align">
+    <div class="text-center">
         <img class="avatar-perfil-usuario" src="assets/imagenes/avatares/vehiculos/<?php echo $avatar; ?>.jpg" alt="<?php echo $avatar; ?>">     
     </div>
 <h5 class="text-muted"><?php echo $vehiculo["DOMINIO"]; ?></h5>

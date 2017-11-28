@@ -18,7 +18,7 @@
         <div class="row">
             <!-- Tarjeta Empleados -->
             <?php if($_SESSION['id_rol'] != 1) { ?>
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <img class="img-responsive" src="assets/imagenes/empleados.jpg">
@@ -33,7 +33,7 @@
 
             <!-- Tarjeta vehiculos -->
             <?php if($_SESSION['id_rol'] != 1) { ?>
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <img class="img-responsive" src="assets/imagenes/camion.jpg">
@@ -48,7 +48,7 @@
 
             <!-- Tarjeta Viajes -->
             <?php if($_SESSION['id_rol'] != 1) { ?>
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <img class="img-responsive" src="assets/imagenes/viajes.jpg">
@@ -63,7 +63,7 @@
 
             <!-- Tarjeta Reportes -->
             <?php if($_SESSION['id_rol'] == 3) { ?>
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <img class="img-responsive" src="assets/imagenes/graficos.jpg">
@@ -78,7 +78,7 @@
             <!-- Fin Tarjeta Reportes -->
 
             <!-- Tarjeta Seguimiento -->
-            <div class="col-xs-12 col-md-4">
+            <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <img class="img-responsive" src="assets/imagenes/seguimientos.jpg">
@@ -91,7 +91,7 @@
             <!-- Fin Tarjeta Seguimiento -->        
 
             <!-- Tarjeta Mantenimientos -->
-            <div class="col-xs-12 col-md-4">
+            <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <img class="img-responsive" src="assets/imagenes/mantenimientos.jpg">

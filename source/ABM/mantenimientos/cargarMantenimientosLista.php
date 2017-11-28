@@ -11,25 +11,31 @@ $mantenimientos = $db->obtenerMantenimientos();
 <?php foreach($mantenimientos as $mantenimiento): ?>
 
     <li class="list-group-item avatar">
-        <span class="title">Fecha: <?php echo $mantenimiento["FECHA"]; ?></span>
-        <p class="title">Vehiculo: <?php echo $mantenimiento["DOMINIO_VEHICULO"]; echo " "; ?></p>
-        <p class="title">Trabajo realizado: <?php echo $mantenimiento["COMENTARIO"]; echo " "; ?></p>
-        <p><a class="btn-datos-mantenimiento modal-trigger link margin-bottom-10" data-id="<?php echo $mantenimiento["ID"]; ?>" href="#modalDatosMantenimiento">Ver ficha completa</a></p>
-        <!-- 
-            Los botones de de Editar y Eliminar Mantenimiento solo estan disponibles si el usuario
-            que esta navegando la aplicación tiene rol de Supervisor 
-        -->
-        <?php if($_SESSION['id_rol'] == 3) { ?>
-            <!-- Eliminar -->
-            <a href ="#!" data-id-eliminar="<?php echo $mantenimiento["ID"]; ?>" class="btn-baja-mantenimiento secondary-content light-blue lighten-1 waves-effect waves-light btn tooltipped" data-position="right" data-tooltip="Eliminar">
-                <i class="material-icons">delete</i>
-            </a>
-            <!-- Editar -->
-            <?php if($mantenimiento["REALIZADO"] == 0) { ?>
-                <a href ="#!" data-id-editar="<?php echo $mantenimiento["ID"]; ?>" class="btn-editar-mantenimiento secondary-content light-blue lighten-1 waves-effect waves-light btn btn-empleado-editar tooltipped" data-position="left" data-tooltip="Marcar como realizado">
-                    <i class="material-icons">done</i>
-                </a>
-            <?php } ?>
-        <?php } ?>
+		<div class="media">
+			<div class="media-body">
+				<span class="title">Fecha: <?php echo $mantenimiento["FECHA"]; ?></span>
+				<p class="title">Vehiculo: <?php echo $mantenimiento["DOMINIO_VEHICULO"]; echo " "; ?></p>
+				<p class="title">Trabajo realizado: <?php echo $mantenimiento["COMENTARIO"]; echo " "; ?></p>
+				<p><a class="btn-datos-mantenimiento modal-trigger link" data-id="<?php echo $mantenimiento["ID"]; ?>" href="#modalDatosMantenimiento">Ver ficha completa</a></p>
+			</div>
+			<!-- 
+				Los botones de de Editar y Eliminar Mantenimiento solo estan disponibles si el usuario
+				que esta navegando la aplicación tiene rol de Supervisor 
+			-->
+			<?php if($_SESSION['id_rol'] == 3) { ?>
+			<div class="media-right">
+				<!-- Eliminar -->
+				<a href ="#!" data-id-eliminar="<?php echo $mantenimiento["ID"]; ?>" class="btn-baja-mantenimiento secondary-content light-blue lighten-1 waves-effect waves-light btn btn-primary" data-toggle="tooltip" data-placement="right" title="Eliminar">
+					<i class="material-icons">delete</i>
+				</a>
+				<!-- Editar -->
+				<?php if($mantenimiento["REALIZADO"] == 0) { ?>
+					<a href ="#!" data-id-editar="<?php echo $mantenimiento["ID"]; ?>" class="btn-editar-mantenimiento secondary-content light-blue lighten-1 waves-effect waves-light btn btn-primary btn-empleado-editar" data-toggle="tooltip" data-placement="left" title="Marcar como realizado">
+						<i class="material-icons">done</i>
+					</a>
+				<?php } ?>
+			</div>
+			<?php } ?>
+		</div>
     </li>
 <?php endforeach; ?>

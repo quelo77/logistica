@@ -16,26 +16,24 @@
 	<?php require_once('source/inc/ga.php'); ?>
 	<?php require_once('source/views/shared/_header.php'); ?>
 	<div class="container margin-top-20">
-		<h2 class="center-align">Empleados</h2>
+		<h2 class="text-center">Empleados</h2>
 		<!-- Contenido de pagina -->
 		<!-- Filtro de busqueda -->
-		<div class="card-panel grey lighten-5">
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="well">
-						<form id="formularioListaFiltrada" class="form-inline">
-							<div class="form-group">
-								<div class="input-group">
-									<div class="input-group-addon"><i class="material-icons prefix">search</i></div>
-									<input id="icon_prefix" type="text" class="form-control validate" name="NOMBREEMPLEADO">
-								</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="well">
+					<form id="formularioListaFiltrada" class="form-inline">
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon"><i class="material-icons prefix">search</i></div>
+								<input id="icon_prefix" type="text" class="form-control validate" name="NOMBREEMPLEADO">
 							</div>
-							<label for="icon_prefix"><a href="#!" id="btn-lista-filtrada" class="btn btn-primary text-uppercase">Buscar Empleado</a></label>
-						</form>
-					</div>
+						</div>
+						<label for="icon_prefix"><a href="#!" id="btn-lista-filtrada" class="btn btn-primary text-uppercase">Buscar Empleado</a></label>
+					</form>
 				</div>
-
 			</div>
+
 		</div>
 		<p>
 			<i class="material-icons prefix">print</i> 
@@ -84,7 +82,7 @@
 
 	<!-- Modal Editar Empleado -->
 	<div id="modalEditarEmpleado" class="modal">
-		<div class="modal-content center-align"></div>
+		<div class="modal-content text-center"></div>
 	</div>
 	<div class="modal fade" id="modalEditarEmpleado" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">

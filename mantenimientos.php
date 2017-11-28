@@ -16,14 +16,14 @@
     <?php require_once('source/inc/ga.php'); ?>
     <?php require_once('source/views/shared/_header.php'); ?>
     <div class="container margin-top-20">
-        <h2 class="center-align">Mantenimientos</h2>
+        <h2 class="text-center">Mantenimientos</h2>
         <!-- Contenido de pagina -->
         <div class="row">
             <!-- boton nuevo mantenimiento -->
             <?php if($_SESSION['id_rol'] == 3) { ?> <!-- Botón de agregar mantenimiento sólo habilitado para rol Supervisor -->
                 <div class="col-xs-12 margin-top-10 margin-bottom-10">
-                    <div class="center-align">
-                        <a href ="#modalNuevoMantenimiento" id="btn-nuevo-lista" class="light-blue darken-1 waves-effect waves-light btn-large modal-trigger"><i class="material-icons right">input</i>agregar nuevo</a>
+                    <div class="text-center">
+                        <a href ="#modalNuevoMantenimiento" id="btn-nuevo-lista" class="light-blue darken-1 waves-effect waves-light btn btn-primary text-uppercase modal-trigger"><i class="material-icons right">input</i> agregar nuevo</a>
                     </div>
                 </div>
             <?php } ?>
@@ -37,13 +37,13 @@
     </div>
     <!-- Modal Nuevo mantenimiento -->
     <div id="modalNuevoMantenimiento" class="modal">
-        <div class="modal-content center-align"></div>
+        <div class="modal-content text-center"></div>
     </div>
     <!-- Fin Modal Nuevo mantenimiento -->
 
     <!-- Modal Ver Datos de mantenimiento -->
     <div id="modalDatosMantenimiento" class="modal modal-fixed-footer">
-        <div class="modal-content center-align"></div>
+        <div class="modal-content text-center"></div>
         <div class="modal-footer">
             <a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat">Aceptar</a>
         </div>

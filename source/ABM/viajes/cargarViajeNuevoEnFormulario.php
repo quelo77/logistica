@@ -15,7 +15,7 @@
     <h4>Agregar nuevo Viaje</h4>
     <!--<input type="hidden" name="ACTIVO" value="">-->
     <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col-xs-12">
             <select name="DOMINIO_VEHICULO" required>
                 <option value="" disabled selected>Seleccione el Vehículo</option>
                 <?php foreach($vehiculos as $vehiculo): ?>
@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col-xs-12">
             <select name="ID_EMPLEADO" required>
                 <option value="" disabled selected>Seleccione el Chofer</option>
                 <?php foreach($choferes as $chofer): ?>
@@ -39,7 +39,7 @@
         </div>        
     </div>    
     <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col-xs-12">
             <select name="ID_DESTINO" required>
                 <option value="" disabled selected>Seleccione el Destino</option>
                 <?php foreach($destinos as $destino): ?>
@@ -51,7 +51,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col-xs-12">
             <select name="ID_CLIENTE" required>
                 <option value="" disabled selected>Seleccione el Cliente</option>
                 <?php foreach($clientes as $cliente): ?>
@@ -63,28 +63,28 @@
         </div>
     </div>
     <div class="row">
-        <div class="input-field col s12">
-            <p class="center-align">Ingrese Fecha Programada</p>
+        <div class="input-field col-xs-12">
+            <p class="text-center">Ingrese Fecha Programada</p>
             <input type="date" name="FECHA_PROGRAMADA">
         </div>        
     </div>
     <div class="row">
-        <div class="input-field col s12">
-            <p class="center-align">Ingrese Fecha Inicio</p>
+        <div class="input-field col-xs-12">
+            <p class="text-center">Ingrese Fecha Inicio</p>
             <input type="date" name="FECHA_INICIO">
         </div>        
     </div>
     <div class="row">
-        <div class="input-field col s12">
-            <p class="center-align">Ingrese Fecha Fin</p>
+        <div class="input-field col-xs-12">
+            <p class="text-center">Ingrese Fecha Fin</p>
             <input type="date" name="FECHA_FIN">
         </div>
     </div>
     <div class="row">
-        <div class="input-field col s12 m6">
+        <div class="input-field col-xs-12 col-sm-6">
             <input  placeholder="Cantidad de Kilometros" type="text" name="CANT_KILOMETROS">
         </div>
-        <div class="input-field col s12 m6">
+        <div class="input-field col-xs-12 col-sm-6">
             <select name="ID_ACOPLADO" required>
                 <option value="" disabled selected>Seleccione el Acoplado</option>
                 <?php foreach($acoplados as $acoplado): ?>
@@ -96,7 +96,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col-xs-12">
             <a href="#!" id="btn-nuevo-viaje" class="modal-action modal-close light-blue darken-1 waves-effect waves-light btn-large">Agregar Nuevo Viaje</a>
         </div>
     </div>

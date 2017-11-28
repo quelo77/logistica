@@ -16,7 +16,7 @@
 	<?php require_once('source/inc/ga.php'); ?>
 	<?php require_once('source/views/shared/_header.php'); ?>
 	<div class="container margin-top-20">
-		<h2 class="center-align">Viajes</h2>
+		<h2 class="text-center">Viajes</h2>
 		<!-- Contenido de pagina -->
 		<div class="row">
 			<!-- boton nuevo viaje -->

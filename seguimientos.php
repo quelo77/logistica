@@ -22,18 +22,18 @@
     <div class="container margin-top-20">
         <div class="row">
             <div class="col-xs-12">
-        		<h2 class="center-align">Seguimientos</h2>
+        		<h2 class="text-center">Seguimientos</h2>
         <!-- Contenido de pagina -->
                 <!-- Lista Empleados -->
                 <ul class="list-group" id="lista-viajes-con-mapa">
                     <?php foreach($viajes as $viaje): ?>
-                        <li class="list-group-item center-align">
+                        <li class="list-group-item text-center">
                             <p>
                                 Viaje con destino a: <?php echo $viaje["DIRECCION"]; ?> <?php echo $viaje["NUMERO"]; ?>, <?php echo $viaje["LOCALIDAD"]; ?>, <?php echo $viaje["PAIS"]; ?>
                             </p>
                             <p class="text-muted">Cliente: <?php echo $viaje["CLIENTE"]; ?></p>
                             <p>
-                                <a href="#modalMapa" data-id="<?php echo $viaje["ID"]; ?>" class="btn-mapa light-blue darken-1 waves-effect waves-light btn-large modal-trigger">Ver Paradas</a>
+                                <a href="#modalMapa" data-id="<?php echo $viaje["ID"]; ?>" class="btn-mapa light-blue darken-1 waves-effect waves-light btn btn-primary text-uppercase modal-trigger">Ver paradas</a>
                             </p>
                         </li>
                     <?php endforeach; ?>
@@ -45,7 +45,7 @@
     </div>
     <!-- Modal Mapa -->
     <div id="modalMapa" class="modal">
-        <div class="modal-content center-align">
+        <div class="modal-content text-center">
             <div id="contenedor-mapa"></div>
         </div>
     </div>

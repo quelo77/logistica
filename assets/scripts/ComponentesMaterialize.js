@@ -2,11 +2,11 @@ var ComponentesMaterialize = function () {
 	'use strict';
 	
 	this.cargar = function() {
-		inicializarSideNav();
+		//inicializarSideNav();
 	    inicializarModals();
-	    inicilizarCombos();
+	    //inicilizarCombos();
 	    // inicializarDatePickers(); De momento se va a usar el datepicker de nativo de HTML5
-	    inizializarTooltips();
+	    //inizializarTooltips();
 	};
 
 	/* Métodos privados */
@@ -30,6 +30,6 @@ var ComponentesMaterialize = function () {
         });
     }
     function inizializarTooltips() {
-        $('.tooltipped').tooltip({delay: 20});
+        //$('.tooltipped').tooltip({delay: 20});
     }	
 };

@@ -15,32 +15,32 @@
     <?php require_once('source/inc/ga.php'); ?>
     <?php require_once('source/views/shared/_header.php'); ?>
     <div class="container margin-top-20">
-        <h2 class="center-align">Reportes</h2>
+        <h2 class="text-center">Reportes</h2>
         <!-- Lista de Reportes -->
         <div class="row">
             <div class="col-xs-12">
-                <div class="center-align">
+                <div class="text-center">
                     <img class="responsive-img" src="source/generadorGraficas/camiones.php" alt="">
                 </div>                
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <div class="center-align">
+                <div class="text-center">
                     <img class="responsive-img" src="source/generadorGraficas/clientes.php" alt="">
                 </div>                
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <div class="center-align">
+                <div class="text-center">
                     <img class="responsive-img" src="source/generadorGraficas/choferes.php" alt="">
                 </div>                
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <div class="center-align">
+                <div class="text-center">
                     <img class="responsive-img" src="source/generadorGraficas/acoplados.php" alt="">
                 </div>                
             </div>

@@ -16,26 +16,24 @@
 	<?php require_once('source/inc/ga.php'); ?>
 	<?php require_once('source/views/shared/_header.php'); ?>
 	<div class="container margin-top-20">
-		<h2 class="center-align">Vehículos</h2>
+		<h2 class="text-center">Vehículos</h2>
 		<!-- Contenido de pagina -->
 		<!-- Filtro de busqueda -->
-		<div class="card-panel grey lighten-5">
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="well">
-						<form id="formularioListaFiltrada" class="form-inline">
-							<div class="form-group">
-								<label for="icon_prefix" class="sr-only">Buscar Vehículo</label>
-								<div class="input-group">
-									<div class="input-group-addon">
-										<i class="material-icons prefix">search</i>
-									</div>
-									<input id="icon_prefix" type="text" class="form-control validate" name="DOMINIO">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="well">
+					<form id="formularioListaFiltrada" class="form-inline">
+						<div class="form-group">
+							<label for="icon_prefix" class="sr-only">Buscar Vehículo</label>
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="material-icons prefix">search</i>
 								</div>
+								<input id="icon_prefix" type="text" class="form-control validate" name="DOMINIO">
 							</div>
-							<a id="btn-lista-filtrada" class="light-blue darken-1 waves-effect waves-light btn btn-primary text-uppercase">Buscar</a>
-						</form>
-					</div>
+						</div>
+						<a id="btn-lista-filtrada" class="light-blue darken-1 waves-effect waves-light btn btn-primary text-uppercase">Buscar</a>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -63,13 +61,13 @@
 	</div>
 	<!-- Modal Nuevo Vehiculo -->
 	<div id="modalNuevoVehiculo" class="modal">
-		<div class="modal-content center-align"></div>
+		<div class="modal-content text-center"></div>
 	</div>
 	<!-- Fin Modal Nuevo Vehiculo -->
 
 	<!-- Modal Ver Datos de Vehiculo -->
 	<div id="modalDatosVehiculo" class="modal modal-fixed-footer">
-		<div class="modal-content center-align"></div>
+		<div class="modal-content text-center"></div>
 		<div class="modal-footer">
 			<a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat ">Aceptar</a>
 		</div>
@@ -78,7 +76,7 @@
 
 	<!-- Modal Editar Vehiculo -->
 	<div id="modalEditarVehiculo" class="modal">
-		<div class="modal-content center-align"></div>
+		<div class="modal-content text-center"></div>
 	</div>
 	<!-- Fin Modal Editar de Vehiculo -->    
 	<!-- Fin Contenido de pagina -->
