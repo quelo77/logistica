@@ -112,7 +112,7 @@ var Empleados = function () {
                 data: idUsuario,
                 dataType: 'html',
                 success: function(data){
-                    $('#modalEditarEmpleado .modal-content').html(data);
+                    $('#modalEditarEmpleado .modal-body').html(data);
                 }
             }).done(function(){
                 btnEmpleadoEditar();
@@ -129,7 +129,7 @@ var Empleados = function () {
                 method: 'post',
                 dataType: 'html',
                 success: function(data){
-                    $('#modalNuevoEmpleado .modal-content').html(data);
+                    $('#modalNuevoEmpleado .modal-body').html(data);
                 }
             }).done(function(){
                 componentesMaterialize.cargar();
@@ -178,7 +178,7 @@ var Empleados = function () {
                 data: idUsuario,
                 dataType: 'html',
                 success: function(data){
-                    $('#modalDatosEmpleado .modal-content').html(data);
+                    $('#modalDatosEmpleado .modal-body').html(data);
                 }
             });
         });

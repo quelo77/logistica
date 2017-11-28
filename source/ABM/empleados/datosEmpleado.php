@@ -19,7 +19,7 @@
     </div>
 <h5 class="text-muted"><?php echo $empleado["CARGO"]; ?></h5>
 <div class="row">
-	<div class="col-xs-12 col-md-6">
+	<div class="col-xs-12 col-sm-6">
 		<ul class="list-group left-align">
 			<li class="list-group-item">ID: <?php echo $empleado["ID"]; ?></li>
 			<li class="list-group-item">Nombre: <?php echo $empleado["NOMBRE"]; ?></li>
@@ -30,7 +30,7 @@
 			<li class="list-group-item">Fecha de ingreso: <?php echo $empleado["FECHA_INGRESO"]; ?></li>
 		</ul>		
 	</div>
-	<div class="col-xs-12 col-md-6">
+	<div class="col-xs-12 col-sm-6">
 		<ul class="list-group left-align">
 			<li class="list-group-item">Suedo: $<?php echo $empleado["SUELDO"]; ?>.-</li>
 			<li class="list-group-item">Cargo: <?php echo $empleado["CARGO"]; ?></li>

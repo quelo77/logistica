@@ -176,7 +176,7 @@ var Mantenimientos = function () {
                 method: 'post',
                 dataType: 'html',
                 success: function(data){
-                    $('#modalNuevoMantenimiento .modal-content').html(data);
+                    $('#modalNuevoMantenimiento .modal-body').html(data);
                 }
             }).done(function(){
                 componentesMaterialize.cargar();
@@ -197,7 +197,7 @@ var Mantenimientos = function () {
                 data: IdMantenimiento,
                 dataType: 'html',
                 success: function(data){
-                    $('#modalDatosMantenimiento .modal-content').html(data);
+                    $('#modalDatosMantenimiento .modal-body').html(data);
                 }
             });
         });

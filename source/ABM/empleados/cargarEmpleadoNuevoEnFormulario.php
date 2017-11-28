@@ -32,11 +32,11 @@
         </div>                                                
     </div>
     <div class="row">
-        <div class="col s6">
+        <div class="col-xs-6">
             <input id="radioMasculino" name="SEXO" type="radio" value="M" checked/>
             <label for="radioMasculino">Masculino</label>                                                
         </div>
-        <div class="col s6">
+        <div class="col-xs-6">
             <input id="radioFemenino" name="SEXO" type="radio" value="F"/>
             <label for="radioFemenino">Femenino</label>
         </div>                                                

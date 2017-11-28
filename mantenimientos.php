@@ -38,18 +38,26 @@
         </div>        
     </div>
     <!-- Modal Nuevo mantenimiento -->
-    <div id="modalNuevoMantenimiento" class="modal">
-        <div class="modal-content text-center"></div>
-    </div>
+	<div class="modal fade" id="modalNuevoMantenimiento" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body"></div>
+			</div>
+		</div>
+	</div>
     <!-- Fin Modal Nuevo mantenimiento -->
 
     <!-- Modal Ver Datos de mantenimiento -->
-    <div id="modalDatosMantenimiento" class="modal modal-fixed-footer">
-        <div class="modal-content text-center"></div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat">Aceptar</a>
-        </div>
-    </div>
+	<div class="modal fade" id="modalDatosMantenimiento" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body"></div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat">Aceptar</a>
+				</div>
+			</div>
+		</div>
+	</div>
     <!-- Fin Modal Ver Datos de mantenimiento -->
 
     <!-- Fin Modal Editar de mantenimiento -->    
