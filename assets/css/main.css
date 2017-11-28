@@ -5,7 +5,7 @@
 body {
     background: #f6f6f6;
     color: #616161;
-    font-family: 'Cabin', sans-serif;
+    font: 16px/1.5 'Cabin', sans-serif;
 }
 
 /*
@@ -163,12 +163,21 @@ h2.login {
 	color: #03a9f4;
 }
 
+#lista-empleados .media-left img, #lista-vehiculos .media-left img {
+	width: 64px;
+	height: auto
+}
+
 .navbar-global, body>footer {
 	color: #c0e6f9 !important;
 	background: #039be6;
 }
 .navbar-global .navbar-text, .navbar-global a, body>footer a { color: inherit !important }
 .navbar-global a:hover, .navbar-global a:focus, body>footer a:hover, body>footer a:focus { color: #fff !important }
+.footer-copyright {
+	background: #0793d7;
+	padding-top: 14px
+}
 
 
 /***************** Override de listas *************************/
