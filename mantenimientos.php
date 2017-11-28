@@ -15,16 +15,18 @@
 <body>
     <?php require_once('source/inc/ga.php'); ?>
     <?php require_once('source/views/shared/_header.php'); ?>
-    <div class="container margin-top-20">
-        <h2 class="text-center">Mantenimientos</h2>
-        <!-- Contenido de pagina -->
+    <div class="container">
         <div class="row">
+			<div class="col-xs-12">
+        		<h2 class="text-center">Mantenimientos</h2>
+			</div>
+        <!-- Contenido de pagina -->
             <!-- boton nuevo mantenimiento -->
             <?php if($_SESSION['id_rol'] == 3) { ?> <!-- Botón de agregar mantenimiento sólo habilitado para rol Supervisor -->
-                <div class="col-xs-12 margin-top-10 margin-bottom-10">
-                    <div class="text-center">
+                <div class="col-xs-12">
+                    <p class="text-center">
                         <a href ="#modalNuevoMantenimiento" id="btn-nuevo-lista" class="light-blue darken-1 waves-effect waves-light btn btn-primary text-uppercase modal-trigger"><i class="material-icons right">input</i> agregar nuevo</a>
-                    </div>
+                    </p>
                 </div>
             <?php } ?>
             <!-- Fin boton nuevo mantenimiento -->

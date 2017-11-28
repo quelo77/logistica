@@ -15,12 +15,12 @@
 <body>
 	<?php require_once('source/inc/ga.php'); ?>
 	<?php require_once('source/views/shared/_header.php'); ?>
-	<div class="container margin-top-20">
-		<h2 class="text-center">Vehículos</h2>
+	<div class="container">
 		<!-- Contenido de pagina -->
 		<!-- Filtro de busqueda -->
 		<div class="row">
 			<div class="col-xs-12">
+				<h2 class="text-center">Vehículos</h2>
 				<div class="well">
 					<form id="formularioListaFiltrada" class="form-inline">
 						<div class="form-group">

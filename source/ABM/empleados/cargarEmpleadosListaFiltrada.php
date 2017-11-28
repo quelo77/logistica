@@ -22,7 +22,7 @@ if(empty($_POST["NOMBREEMPLEADO"])) {
 			</div>
 			<div class="media-body">
 				<h4 class="media-heading"><?php echo $empleado["NOMBRE"]; ?>&nbsp;<?php echo $empleado["APELLIDO"]; ?></h4>
-				<p class="text-muted"><?php echo $empleado["CARGO"]; ?> <span class="tag"><?php echo $empleado["ROL"]; ?></span>
+				<p class="text-muted"><?php echo $empleado["CARGO"]; ?> <span class="badge"><?php echo $empleado["ROL"]; ?></span>
 				</p>
 				<p><a class="btn-datos-empleado modal-trigger link margin-bottom-10" data-id="<?php echo $empleado["ID"]; ?>" href="#modalDatosEmpleado">Ver perfil completo</a></p>
 			</div>
