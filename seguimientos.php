@@ -33,7 +33,7 @@
                             </p>
                             <p class="text-muted">Cliente: <?php echo $viaje["CLIENTE"]; ?></p>
                             <p>
-                                <a href="#modalMapa" data-id="<?php echo $viaje["ID"]; ?>" class="btn-mapa btn btn-primary text-uppercase modal-trigger">Ver paradas</a>
+                                <a href="#modalMapa" data-id="<?php echo $viaje["ID"]; ?>" class="btn-mapa btn btn-primary text-uppercase" data-toggle="modal" data-target="#modalMapa">Ver paradas</a>
                             </p>
                         </li>
                     <?php endforeach; ?>
@@ -44,11 +44,18 @@
         <!-- Fin Contenido de pagina -->        
     </div>
     <!-- Modal Mapa -->
-	<div class="modal fade" id="modalMapa" tabindex="-1" role="dialog">
+	<div class="modal fade" id="modalMapa" tabindex="-1" role="dialog" aria-labelledby="modalMapaLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="modalMapaLabel">Paradas</h4>
+				</div>
 				<div class="modal-body">
             		<div id="contenedor-mapa"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
 				</div>
 			</div>
 		</div>
