@@ -1,0 +1,7 @@
+Hacer funcionar las graficas,revisar que no falta datos en la base de datos.
+meter el md5 en la contrasena del hash
+hacer funcionar los mapas.que tengan multipuntos,seguimientos y funcionen.
+trabajar con los modals.
+sacar el boton de configuracion.
+darle funcionalidad a mi perfil.
+sacar link.
