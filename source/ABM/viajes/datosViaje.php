@@ -22,7 +22,6 @@
 	//FIN CODIGO QR
 ?>
 
-<h4>Datos de Viaje</h4>
 <?php
         	echo '<img  src="imagenes/qr/Camion-qr/' . $file . '" alt="" >'
  ?>

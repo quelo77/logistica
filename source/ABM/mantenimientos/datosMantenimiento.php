@@ -9,7 +9,6 @@
     $mantenimiento = $db->obtenerMantenimientoPorID($idUsuario); 
 ?>
 
-<h4>Ficha del Mantenimiento</h4>
 <div class="row">
 	<div class="col-xs-12 col-sm-6">
 		<ul class="list-group">

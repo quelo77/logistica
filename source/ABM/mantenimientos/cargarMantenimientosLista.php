@@ -16,7 +16,7 @@ $mantenimientos = $db->obtenerMantenimientos();
 				<span class="title">Fecha: <?php echo $mantenimiento["FECHA"]; ?></span>
 				<p class="title">Vehiculo: <?php echo $mantenimiento["DOMINIO_VEHICULO"]; echo " "; ?></p>
 				<p class="title">Trabajo realizado: <?php echo $mantenimiento["COMENTARIO"]; echo " "; ?></p>
-				<p><a class="btn-datos-mantenimiento modal-trigger link" data-id="<?php echo $mantenimiento["ID"]; ?>" href="#modalDatosMantenimiento">Ver ficha completa</a></p>
+				<p><a class="btn-datos-mantenimiento link" data-id="<?php echo $mantenimiento["ID"]; ?>" href="#modalDatosMantenimiento" data-toggle="modal" data-target="#modalDatosMantenimiento">Ver ficha completa</a></p>
 			</div>
 			<!-- 
 				Los botones de de Editar y Eliminar Mantenimiento solo estan disponibles si el usuario

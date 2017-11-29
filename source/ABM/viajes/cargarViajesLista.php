@@ -16,7 +16,7 @@ $viajes = $db->obtenerViajes();
 					Viaje con destino a: <?php echo $viaje["DIRECCION"]; ?> <?php echo $viaje["NUMERO"]; ?>, <?php echo $viaje["LOCALIDAD"]; ?>, <?php echo $viaje["PAIS"]; ?>
 				</h4>
 				<p class="text-muted">Cliente: <?php echo $viaje["CLIENTE"]; ?></p>
-				<p><a class="btn-datos-viaje modal-trigger link margin-bottom-10" data-id="<?php echo $viaje["ID"]; ?>" href="#modalDatosViaje">Ver datos de viaje</a></p>
+				<p><a class="btn-datos-viaje link" data-id="<?php echo $viaje["ID"]; ?>" href="#modalDatosViaje" data-toggle="modal" data-target="#modalDatosViaje">Ver datos de viaje</a></p>
 				<!-- 
 					Los botones de de Editar y Eliminar Empleado solo estan disponibles si el usuario
 					que esta navegando la aplicación tiene rol de Supervisor 

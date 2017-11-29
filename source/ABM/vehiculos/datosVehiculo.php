@@ -12,7 +12,6 @@
 
 ?>
 
-<h4>Ficha del Vehículo</h4>
     <div class="text-center">
         <img class="avatar-perfil-usuario" src="assets/imagenes/avatares/vehiculos/<?php echo $avatar; ?>.jpg" alt="<?php echo $avatar; ?>">     
     </div>

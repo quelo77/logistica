@@ -22,7 +22,7 @@ if(empty($_POST["DOMINIO"])) {
 		</div>
 		<div class="media-body">
 			<h4 class="media-heading"><?php echo $vehiculo["DOMINIO"]; ?></h4>
-			<p><a class="btn-datos-vehiculo modal-trigger link margin-bottom-10" data-id="<?php echo $vehiculo["DOMINIO"]; ?>" href="#modalDatosVehiculo">Ver ficha completa</a></p>
+			<p><a class="btn-datos-vehiculo link" data-id="<?php echo $vehiculo["DOMINIO"]; ?>" href="#modalDatosVehiculo" data-toggle="modal" data-target="#modalDatosVehiculo">Ver ficha completa</a></p>
 		</div>
         <!-- 
             Los botones de de Editar y Eliminar Vehiculo solo estan disponibles si el usuario
