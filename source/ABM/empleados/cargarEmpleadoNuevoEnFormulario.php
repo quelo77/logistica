@@ -9,7 +9,6 @@
 ?>
 
 <form id="formNuevoEmpleado">
-    <h4>Agregar nuevo Empleado</h4>
     <!--<input type="hidden" name="ACTIVO" value="">-->
     <div class="row">
         <div class="col-xs-12 col-sm-6">
@@ -91,9 +90,9 @@
             <input id="avatar" name="AVATAR" type="text" class="form-control">
         </div>
     </div>    
-    <div class="row">
+    <!--<div class="row">
         <div class="col-xs-12">
             <a href="#!" id="btn-nuevo-empleado" class="modal-action modal-close btn btn-primary text-uppercase">Agregar Nuevo Empleado</a>
         </div>
-    </div>
+    </div>-->
 </form>

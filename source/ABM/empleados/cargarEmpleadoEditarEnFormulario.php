@@ -109,10 +109,5 @@
             <label for="Avatar">AVATAR</label>
             <input id="avatar" placeholder="Ingrese nombre de avatar" name="AVATAR" type="text" class="form-control" value="<?php echo $empleado["AVATAR"];?>">
         </div>
-    </div>    
-    <div class="row">
-        <div class="col-xs-12">
-            <a href="#!" id="btn-editar-empleado" class="modal-action btn btn-primary text-uppercase">Actualizar Empleado</a>
-        </div>
     </div>
 </form>

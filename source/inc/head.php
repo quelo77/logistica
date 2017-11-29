@@ -11,6 +11,6 @@
     <link href='https://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
     <!--<link rel="stylesheet" href="assets/css/vendor/materialize.css"/>-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <!--    <link rel="stylesheet" type="text/css" href="assets/css/vendor/sweetalert2.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendor/sweetalert2.css">
     <link rel="stylesheet" href="assets/css/main.css"/>
 </head>

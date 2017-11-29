@@ -94,7 +94,7 @@ var Empleados = function () {
                     });
                 }
             }).done(function(){
-            	$('#modalNuevoEmpleado').closeModal();
+            	$('#modalNuevoEmpleado').modal('hide');
                 cargarEmpleadosLista();
             });
         });
@@ -206,7 +206,7 @@ var Empleados = function () {
 	                    title: 'Usuario editado con éxito',
 	                    type: 'success'
 	                }, function(){
-	                    $('#modalEditarEmpleado').closeModal();
+	                    $('#modalEditarEmpleado').modal('hide');
 	                });
 	            },
 	            error: function() {
