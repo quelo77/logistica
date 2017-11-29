@@ -8,6 +8,8 @@ body {
     font: 16px/1.5 'Cabin', sans-serif;
 }
 
+.input-group-addon, .btn, .form-control { font-size: 16px }
+
 /*
 .container {
     padding: 0 7px;
@@ -54,21 +56,21 @@ form {
 	margin-bottom: 10px;
 }
 
-.redondear-imagen {
+/*.redondear-imagen {
 	border-radius: 50%;
-}
+}*/
 
 .avatar-perfil-usuario {
 	max-width: 200px;
 }
-.tag {
+/*.tag {
 	background-color: #C3C3C3;
 	padding: 4px;
 	border-radius: 4px;
 	font-size: 10px;
 	vertical-align: top;
 	color: whitesmoke;
-}
+}*/
 
 #formularioListaFiltrada {
 	max-width: inherit;
@@ -179,7 +181,6 @@ h2.login {
 	padding-top: 14px
 }
 
-
 /***************** Override de listas *************************/
 .list-group .list-group-item.avatar .secondary-content {
 	top: 25px !important;
@@ -191,8 +192,8 @@ h2.login {
 
 /******************** Medias *****************************************/
 
-/* sm ( <= 600px) */
-@media screen and (max-width: 600px) {
+/* sm ( <= 767px) */
+@media (max-width: 767px) {
 	.list-group-item.avatar {
 		overflow: auto;
 		padding-left: 10px !important;
@@ -202,5 +203,13 @@ h2.login {
 		float: none;
 		position: initial;
 
+	}
+}
+@media (min-width: 768px) {
+	.container {
+		max-width: 970px
+	}
+	body.pag-login>.container {
+		width: 480px
 	}
 }

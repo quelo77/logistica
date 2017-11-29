@@ -1,7 +1,7 @@
 $(document).on('ready', function() {
     'use strict';
 	
-	$('[data-toggle="tooltip"]').tooltip();//Tooltip de Bootstrap
+	$('[data-toggle="tooltip"], .tooltipped').tooltip();//Tooltip de Bootstrap
 
     var componentesMaterialize = new ComponentesMaterialize();
     componentesMaterialize.cargar();
