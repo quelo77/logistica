@@ -33,7 +33,7 @@
                             </p>
                             <p class="text-muted">Cliente: <?php echo $viaje["CLIENTE"]; ?></p>
                             <p>
-                                <a href="#modalMapa" data-id="<?php echo $viaje["ID"]; ?>" class="btn-mapa light-blue darken-1 waves-effect waves-light btn btn-primary text-uppercase modal-trigger">Ver paradas</a>
+                                <a href="#modalMapa" data-id="<?php echo $viaje["ID"]; ?>" class="btn-mapa btn btn-primary text-uppercase modal-trigger">Ver paradas</a>
                             </p>
                         </li>
                     <?php endforeach; ?>

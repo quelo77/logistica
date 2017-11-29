@@ -32,7 +32,7 @@
 								<input id="icon_prefix" type="text" class="form-control validate" name="DOMINIO">
 							</div>
 						</div>
-						<a id="btn-lista-filtrada" class="light-blue darken-1 waves-effect waves-light btn btn-primary text-uppercase">Buscar</a>
+						<a id="btn-lista-filtrada" class="btn btn-primary text-uppercase">Buscar</a>
 					</form>
 				</div>
 			</div>

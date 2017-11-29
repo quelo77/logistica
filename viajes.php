@@ -25,7 +25,7 @@
 			<?php if($_SESSION['id_rol'] == 3) { ?> <!-- Botón de agregar Viaje sólo habilitado para rol Supervisor -->
 				<div class="col-xs-12">
 					<p class="text-center">
-						<a href ="#modalNuevoViaje" id="btn-nuevo-viaje-lista" class="light-blue darken-1 waves-effect waves-light btn btn-primary text-uppercase modal-trigger">
+						<a href ="#modalNuevoViaje" id="btn-nuevo-viaje-lista" class="btn btn-primary text-uppercase modal-trigger">
 							<i class="material-icons right">input</i>
 							Agregar nuevo
 						</a>

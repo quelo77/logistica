@@ -93,7 +93,7 @@
     </div>    
     <div class="row">
         <div class="col-xs-12">
-            <a href="#!" id="btn-nuevo-empleado" class="modal-action modal-close light-blue darken-1 waves-effect waves-light btn btn-primary text-uppercase">Agregar Nuevo Empleado</a>
+            <a href="#!" id="btn-nuevo-empleado" class="modal-action modal-close btn btn-primary text-uppercase">Agregar Nuevo Empleado</a>
         </div>
     </div>
 </form>

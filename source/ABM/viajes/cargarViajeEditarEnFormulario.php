@@ -134,7 +134,7 @@
     </div>        
     <div class="row">
         <div class="col-xs-12">
-            <a href="#!" id="btn-editar-viaje" class="modal-action light-blue darken-1 waves-effect waves-light btn-large">Actualizar Viaje</a>
+            <a href="#!" id="btn-editar-viaje" class="modal-action btn btn-primary text-uppercase">Actualizar Viaje</a>
         </div>
     </div>
 </form>

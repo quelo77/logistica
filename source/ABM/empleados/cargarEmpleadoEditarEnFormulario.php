@@ -112,7 +112,7 @@
     </div>    
     <div class="row">
         <div class="col-xs-12">
-            <a href="#!" id="btn-editar-empleado" class="modal-action light-blue darken-1 waves-effect waves-light btn-large">Actualizar Empleado</a>
+            <a href="#!" id="btn-editar-empleado" class="modal-action btn btn-primary text-uppercase">Actualizar Empleado</a>
         </div>
     </div>
 </form>

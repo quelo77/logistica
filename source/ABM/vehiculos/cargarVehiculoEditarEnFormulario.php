@@ -41,7 +41,7 @@
     </div>                                        
     <div class="row">
         <div class="col-xs-12">
-            <a href="#!" id="btn-editar-vehiculo" class="modal-action light-blue darken-1 waves-effect waves-light btn btn-primary text-uppercase">Actualizar vehículo</a>
+            <a href="#!" id="btn-editar-vehiculo" class="modal-action btn btn-primary text-uppercase">Actualizar vehículo</a>
         </div>
     </div>    
 </form>

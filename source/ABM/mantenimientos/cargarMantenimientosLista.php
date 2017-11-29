@@ -25,12 +25,12 @@ $mantenimientos = $db->obtenerMantenimientos();
 			<?php if($_SESSION['id_rol'] == 3) { ?>
 			<div class="media-right">
 				<!-- Eliminar -->
-				<a href ="#!" data-id-eliminar="<?php echo $mantenimiento["ID"]; ?>" class="btn-baja-mantenimiento secondary-content light-blue lighten-1 waves-effect waves-light btn btn-primary" data-toggle="tooltip" data-placement="right" title="Eliminar">
+				<a href ="#!" data-id-eliminar="<?php echo $mantenimiento["ID"]; ?>" class="btn-baja-mantenimiento btn btn-primary" data-toggle="tooltip" data-placement="right" title="Eliminar">
 					<i class="material-icons">delete</i>
 				</a>
 				<!-- Editar -->
 				<?php if($mantenimiento["REALIZADO"] == 0) { ?>
-					<a href ="#!" data-id-editar="<?php echo $mantenimiento["ID"]; ?>" class="btn-editar-mantenimiento secondary-content light-blue lighten-1 waves-effect waves-light btn btn-primary btn-empleado-editar" data-toggle="tooltip" data-placement="left" title="Marcar como realizado">
+					<a href ="#!" data-id-editar="<?php echo $mantenimiento["ID"]; ?>" class="btn-editar-mantenimiento btn btn-primary btn-empleado-editar" data-toggle="tooltip" data-placement="left" title="Marcar como realizado">
 						<i class="material-icons">done</i>
 					</a>
 				<?php } ?>
