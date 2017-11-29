@@ -25,7 +25,7 @@
 			<?php if($_SESSION['id_rol'] == 3) { ?> <!-- Botón de agregar Viaje sólo habilitado para rol Supervisor -->
 				<div class="col-xs-12">
 					<p class="text-center">
-						<a href ="#modalNuevoViaje" id="btn-nuevo-viaje-lista" class="btn btn-primary text-uppercase modal-trigger">
+						<a href="#modalNuevoViaje" id="btn-nuevo-viaje-lista" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#modalNuevoViaje">
 							<i class="material-icons right">input</i>
 							Agregar nuevo
 						</a>
@@ -43,20 +43,36 @@
 	<!-- Fin Contenido de pagina -->
 
 	<!-- Modal Nuevo Viaje -->
-	<div class="modal fade" id="modalNuevoViaje" tabindex="-1" role="dialog">
+	<div class="modal fade" id="modalNuevoViaje" tabindex="-1" role="dialog" aria-labelledby="modalNuevoViajeLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="modalNuevoViajeLabel">Agregar nuevo viaje</h4>
+				</div>
 				<div class="modal-body"></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					<button type="button" id="btn-nuevo-viaje" class="btn btn-primary">Agregar Nuevo Viaje</button>
+				</div>
 			</div>
 		</div>
 	</div>
 	<!-- Fin Modal Nuevo Viaje -->
 
 	<!-- Modal Editar Viaje -->
-	<div class="modal fade" id="modalEditarViaje" tabindex="-1" role="dialog">
+	<div class="modal fade" id="modalEditarViaje" tabindex="-1" role="dialog" aria-labelledby="modalEditarViajeLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="modalEditarViajeLabel">Editar viaje</h4>
+				</div>
 				<div class="modal-body"></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					<button type="button" id="btn-editar-viaje" class="btn btn-primary">Actualizar Viaje</button>
+				</div>
 			</div>
 		</div>
 	</div>

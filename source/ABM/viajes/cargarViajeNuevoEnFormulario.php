@@ -12,7 +12,6 @@
 ?>
 
 <form id="formNuevoViaje">
-    <h4>Agregar nuevo Viaje</h4>
     <!--<input type="hidden" name="ACTIVO" value="">-->
     <div class="row">
         <div class="col-xs-12">
@@ -97,9 +96,9 @@
             </select>
         </div>
     </div>
-    <div class="row">
+    <!--<div class="row">
         <div class="col-xs-12">
             <a href="#!" id="btn-nuevo-viaje" class="modal-action modal-close btn btn-primary text-uppercase">Agregar Nuevo Viaje</a>
         </div>
-    </div>
+    </div>-->
 </form>

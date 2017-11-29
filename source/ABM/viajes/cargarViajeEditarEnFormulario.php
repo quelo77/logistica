@@ -16,7 +16,6 @@
 ?>
 
 <form id="formEditarviaje">
-    <h4>Editar viaje</h4>
     <input type="hidden" name="ID" value="<?php echo $viaje["ID"]; ?>">
     <!--<input type="hidden" name="ACTIVO" value="">-->
     <div class="row">
@@ -132,9 +131,9 @@
             </select>
         </div>        
     </div>        
-    <div class="row">
+    <!--<div class="row">
         <div class="col-xs-12">
             <a href="#!" id="btn-editar-viaje" class="modal-action btn btn-primary text-uppercase">Actualizar Viaje</a>
         </div>
-    </div>
+    </div>-->
 </form>
