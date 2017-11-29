@@ -27,11 +27,11 @@ $vehiculos = $db->obtenerVehiculos();
 			</div>
 			<?php if($_SESSION['id_rol'] == 3) { ?>
 			<div class="media-right">
-				<a href ="#!" data-id-eliminar="<?php echo $vehiculo["DOMINIO"]; ?>" class="btn-baja-vehiculo btn btn-primary" data-toggle="tooltip" data-placement="right" title="Eliminar">
+				<a href="#!" data-id-eliminar="<?php echo $vehiculo["DOMINIO"]; ?>" class="btn-baja-vehiculo btn btn-primary tooltipped" data-placement="right" title="Eliminar">
 					<i class="material-icons">delete</i>
 				</a>
 				<!-- Editar -->
-				<a href ="#modalEditarVehiculo" data-id="<?php echo $vehiculo["DOMINIO"]; ?>" class="btn-editar-lista btn btn-primary btn-empleado-editar modal-trigger" data-toggle="tooltip" data-placement="left" title="Editar">
+				<a href="#modalEditarVehiculo" data-id="<?php echo $vehiculo["DOMINIO"]; ?>" class="btn-editar-lista btn btn-primary btn-empleado-editar tooltipped" data-placement="left" title="Editar" data-toggle="modal" data-target="#modalEditarVehiculo">
 					<i class="material-icons">playlist_add</i>
 				</a>
 			</div>

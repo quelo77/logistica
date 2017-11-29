@@ -11,7 +11,6 @@
 ?>
 
 <form id="formEditarVehiculo">
-    <h4>Editar ficha del Vehículo:</h4>
     <h4><?php echo $vehiculo["DOMINIO"];?></h4>
     <input type="hidden" name="DOMINIO" value="<?php echo $vehiculo["DOMINIO"]; ?>">
     <!--<input type="hidden" name="ACTIVO" value="">-->
@@ -39,9 +38,9 @@
             <input id="nro_motor" placeholder="Ingrese nro.motor" name="NRO_MOTOR" type="number" class="form-control" value="<?php echo $vehiculo["NRO_MOTOR"];?>">
         </div>        
     </div>                                        
-    <div class="row">
+    <!--<div class="row">
         <div class="col-xs-12">
             <a href="#!" id="btn-editar-vehiculo" class="modal-action btn btn-primary text-uppercase">Actualizar vehículo</a>
         </div>
-    </div>    
+    </div>-->
 </form>

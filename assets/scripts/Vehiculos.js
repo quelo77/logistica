@@ -84,7 +84,7 @@ var Vehiculos = function () {
                     });
                 }
             }).done(function(){
-                $('#modalNuevoVehiculo').closeModal();
+                $('#modalNuevoVehiculo').modal('hide');
                 cargarVehiculosLista();
             });
         });
@@ -158,7 +158,7 @@ var Vehiculos = function () {
                         title: 'Vehículo editado con éxito',
                         type: 'success'
                     }, function(){
-                        $('#modalEditarVehiculo').closeModal();
+                        $('#modalEditarVehiculo').modal('hide');
                     });
                 },
                 error: function() {
