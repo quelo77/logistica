@@ -1,8 +1,6 @@
 var Empleados = function () {
 	'use strict';
 
-	var componentesMaterialize = new ComponentesMaterialize();
-
     this.cargarLista = function() {
         cargarEmpleadosLista();
     };
@@ -20,7 +18,7 @@ var Empleados = function () {
             var formData = $('#formularioListaFiltrada').serialize();
             $.ajax({
                 beforeSend: function() {
-                    $('#modalCargando').openModal();
+                    $('#modalCargando').modal('show');
                 },
                 url: 'source/ABM/empleados/cargarEmpleadosListaFiltrada.php',
                 method: 'post',
@@ -30,10 +28,10 @@ var Empleados = function () {
                     $('#lista-empleados').html(data);
                 }
             }).done(function() {    
-                componentesMaterialize.cargar();
+                
                 cargarEventos();
                 ponerFocoEnEmpleadoEditar();
-                $('#modalCargando').closeModal();
+                $('#modalCargando').modal('hide');
             });
         });        
     }
@@ -41,7 +39,7 @@ var Empleados = function () {
 	function cargarEmpleadosLista() { 
 		$.ajax({
             beforeSend: function() {
-                $('#modalCargando').openModal();
+                $('#modalCargando').modal('show');
             },
 		    url: 'source/ABM/empleados/cargarEmpleadosLista.php',
 		    method: 'post',
@@ -50,10 +48,10 @@ var Empleados = function () {
 		        $('#lista-empleados').html(data);
 		    }
 		}).done(function() {	
-			componentesMaterialize.cargar();
+			
 			cargarEventos();
 			ponerFocoEnEmpleadoEditar();
-            $('#modalCargando').closeModal();
+            $('#modalCargando').modal('hide');
 		});
 	}
 
@@ -116,7 +114,7 @@ var Empleados = function () {
                 }
             }).done(function(){
                 btnEmpleadoEditar();
-                componentesMaterialize.cargar();
+                
             });
         });
     }    
@@ -132,7 +130,7 @@ var Empleados = function () {
                     $('#modalNuevoEmpleado .modal-body').html(data);
                 }
             }).done(function(){
-                componentesMaterialize.cargar();
+                
                 btnEmpleadoNuevo();
             });
         });
@@ -151,7 +149,7 @@ var Empleados = function () {
                         title: 'Usuario de alta con éxito',
                         type: 'success'
                     }, function(){
-                        $('#modalNuevoEmpleado').closeModal();
+                        $('#modalNuevoEmpleado').modal('hide');
                     });
                 },
                 error: function() {

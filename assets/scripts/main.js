@@ -3,8 +3,6 @@ $(document).on('ready', function() {
 	
 	$('[data-toggle="tooltip"], .tooltipped').tooltip();//Tooltip de Bootstrap
 
-    var componentesMaterialize = new ComponentesMaterialize();
-    componentesMaterialize.cargar();
 
     var viajes = new Viajes();
     viajes.cargarLista();

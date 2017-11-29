@@ -2,17 +2,17 @@ var ComponentesMaterialize = function () {
 	'use strict';
 	
 	this.cargar = function() {
-	    inicializarModals();
-	    // inicializarDatePickers(); De momento se va a usar el datepicker de nativo de HTML5
+	    //inicializarModals();
+	    //inicializarDatePickers(); De momento se va a usar el datepicker de nativo de HTML5
 	    //inizializarTooltips();
 	};
 
 	/* Métodos privados */
 
 
-    function inicializarModals() {
+    /*function inicializarModals() {
         $('.modal-trigger').leanModal();
-    }
+    }*/
 
 
     /*function inicializarDatePickers() {

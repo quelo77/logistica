@@ -47,7 +47,6 @@
 							<i class="material-icons right">input</i>
 							Agregar nuevo
 						</a>
-						<!--<a href ="#" id="btn-nuevo-lista" class="light-blue darken-1 waves-effect waves-light btn-large modal-trigger"><i class="material-icons right">input</i>agregar mantenimiento</a>-->
 					</div>
 				</div>
 			<?php } ?>

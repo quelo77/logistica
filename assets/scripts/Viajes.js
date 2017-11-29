@@ -1,7 +1,7 @@
 var Viajes = function() {
 	'use strict';
 
-	var componentesMaterialize = new ComponentesMaterialize();
+	
 
     this.cargarLista = function() {
         cargarViajesLista();
@@ -18,7 +18,7 @@ var Viajes = function() {
 		        $('#lista-viajes').html(data);
 		    }
 		}).done(function() {
-			componentesMaterialize.cargar();
+			
 			cargarEventos();
 			ponerFocoEnViajeEditar();
 		});    	
@@ -49,7 +49,7 @@ var Viajes = function() {
                     $('#modalNuevoViaje .modal-body').html(data);
                 }
             }).done(function(){
-                componentesMaterialize.cargar();
+                
                 btnViajeNuevo();
             });
         });
@@ -70,7 +70,7 @@ var Viajes = function() {
                         title: 'Viaje de alta con éxito',
                         type: 'success'
                     }, function(){
-                        $('#modalNuevoViaje').closeModal();
+                        $('#modalNuevoViaje').modal('hide');
                     });
                 },
                 error: function() {
@@ -117,7 +117,7 @@ var Viajes = function() {
                 }
             }).done(function(){
                 btnViajeEditar();
-                componentesMaterialize.cargar();
+                
             });
         });
     }
@@ -135,7 +135,7 @@ var Viajes = function() {
 	                    title: 'Viaje editado con éxito',
 	                    type: 'success'
 	                }, function(){
-	                    $('#modalEditarViaje').closeModal();
+	                    $('#modalEditarViaje').modal('hide');
 	                });
 	            },
 	            error: function() {

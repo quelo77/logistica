@@ -1,7 +1,6 @@
 var Mantenimientos = function () {
     'use strict';
 
-    var componentesMaterialize = new ComponentesMaterialize();
 
     this.cargarLista = function() {
         cargarMantenimientosLista();
@@ -41,7 +40,7 @@ var Mantenimientos = function () {
                 $('#lista-mantenimientos').html(data);
             }
         }).done(function() {    
-            componentesMaterialize.cargar();
+            
             cargarEventos();
         });
     }
@@ -74,7 +73,7 @@ var Mantenimientos = function () {
                     });
                 }
             }).done(function(){
-                $('#modalNuevoMantenimiento').closeModal();
+                $('#modalNuevoMantenimiento').modal('hide');
                 cargarMantenimientosLista();
             });
         });
@@ -179,7 +178,7 @@ var Mantenimientos = function () {
                     $('#modalNuevoMantenimiento .modal-body').html(data);
                 }
             }).done(function(){
-                componentesMaterialize.cargar();
+                
                 btnMantenimientoNuevo();
             });
         });
