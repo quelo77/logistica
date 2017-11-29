@@ -25,7 +25,10 @@
             <?php if($_SESSION['id_rol'] == 3) { ?> <!-- Botón de agregar mantenimiento sólo habilitado para rol Supervisor -->
                 <div class="col-xs-12">
                     <p class="text-center">
-                        <a href ="#modalNuevoMantenimiento" id="btn-nuevo-lista" class="btn btn-primary text-uppercase modal-trigger"><i class="material-icons right">input</i> agregar nuevo</a>
+                        <a href="#modalNuevoMantenimiento" id="btn-nuevo-lista" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#modalNuevoMantenimiento">
+							<i class="material-icons right">input</i>
+							agregar nuevo
+						</a>
                     </p>
                 </div>
             <?php } ?>
@@ -38,10 +41,18 @@
         </div>        
     </div>
     <!-- Modal Nuevo mantenimiento -->
-	<div class="modal fade" id="modalNuevoMantenimiento" tabindex="-1" role="dialog">
+	<div class="modal fade" id="modalNuevoMantenimiento" tabindex="-1" role="dialog" aria-labelledby="modalNuevoMantenimientoLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="modalNuevoMantenimientoLabel">Agregar nuevo Mantenimiento</h4>
+				</div>
 				<div class="modal-body"></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+					<button type="button" id="btn-nuevo-mantenimiento" class="btn btn-primary">Agregar Nuevo Mantenimiento</button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -57,7 +68,7 @@
 				</div>
 				<div class="modal-body"></div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
 				</div>
 			</div>
 		</div>

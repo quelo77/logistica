@@ -10,7 +10,6 @@
 ?>
 
 <form id="formNuevoMantenimiento">
-    <h4>Agregar nuevo Mantenimiento</h4>
     <div class="row">
         <div class="col-xs-12 col-sm-6">
 			<label for="DOMINIO_VEHICULO" class="sr-only">Dominio</label>
@@ -59,9 +58,9 @@
             <input name="COMENTARIO" type="text" class="form-control" required>
         </div>
     </div>    
-    <div class="row">
+    <!--<div class="row">
         <div class="col-xs-12">
             <a href="#!" id="btn-nuevo-mantenimiento" class="modal-action modal-close light-blue darken-1 waves-effect waves-light btn btn-primary text-uppercase">Agregar Nuevo Mantenimiento</a>
         </div>
-    </div>
+    </div>-->
 </form>
