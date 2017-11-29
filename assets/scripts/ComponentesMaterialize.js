@@ -15,13 +15,13 @@ var ComponentesMaterialize = function () {
     }
 
 
-    function inicializarDatePickers() {
+    /*function inicializarDatePickers() {
         $('.datepicker').pickadate({
             selectMonths: true,
             selectYears: 100
         });
-    }
-    function inizializarTooltips() {
-        //$('.tooltipped').tooltip({delay: 20});
-    }	
+    }*/
+    /*function inizializarTooltips() {
+        $('.tooltipped').tooltip({delay: 20});
+    }*/
 };
