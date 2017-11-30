@@ -13,7 +13,7 @@
     $avatar = empty($empleado["AVATAR"]) ? "default" : $empleado["AVATAR"];
 ?>
 
-<h5><?php echo $empleado["NOMBRE"]; echo " "; echo $empleado["APELLIDO"];?></h5>
+<h4><?php echo $empleado["NOMBRE"]; echo " "; echo $empleado["APELLIDO"];?></h4>
     <div class="text-center">
         <img class="avatar-perfil-usuario" src="assets/imagenes/avatares/empleados/<?php echo $avatar; ?>.jpg" alt="<?php echo $avatar; ?>">
     </div>

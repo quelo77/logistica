@@ -15,7 +15,7 @@
     <div class="text-center">
         <img class="avatar-perfil-usuario" src="assets/imagenes/avatares/vehiculos/<?php echo $avatar; ?>.jpg" alt="<?php echo $avatar; ?>">     
     </div>
-<h5 class="text-muted"><?php echo $vehiculo["DOMINIO"]; ?></h5>
+<h4 class="text-muted"><?php echo $vehiculo["DOMINIO"]; ?></h4>
 <div class="row">
 	<div class="col-xs-12 col-sm-6">
 		<ul class="list-group">

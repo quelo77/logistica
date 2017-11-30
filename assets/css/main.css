@@ -7,10 +7,6 @@ body {
     color: #616161;
     font: 16px/1.5 'Cabin', sans-serif;
 }
-
-.input-group-addon, .btn, .form-control { font-size: 16px }
-.close { font-size: 24px }
-
 .link:after {
 	content: "»";
 	position: relative;
@@ -22,13 +18,10 @@ body {
 	left: 10px;
 }
 
-.form-login {
-	background: rgb(255, 255, 255);
-	border: 1px solid #E0E0E0;
-	border-bottom: 5px solid rgba(128, 128, 128, 0.15);
-	border-radius: 4px;	
-	padding: 10px 20px;
-}
+/*Bootstrap override*/
+.input-group-addon, .btn, .form-control { font-size: 16px }
+.close { font-size: 24px }
+/*fin Bootstrap override*/
 
 .avatar-perfil-usuario {
 	max-width: 200px;
@@ -56,6 +49,14 @@ h2.login {
 .logo-camion {
 	width: 200px;
 }
+.form-login {
+	background: rgb(255, 255, 255);
+	border: 1px solid #E0E0E0;
+	border-bottom: 5px solid rgba(128, 128, 128, 0.15);
+	border-radius: 4px;	
+	padding: 10px 20px;
+}
+/* fin Login */
 
 /* Mapas */
 #contenedor-mapa {
@@ -63,12 +64,7 @@ h2.login {
 	width: 100% !important;
 	margin: 0 auto;
 }
-
-/* radio button */
-[type="radio"]:checked + label:after {
-    border: 2px solid #03a9f4;
-    background-color: #03a9f4;
-}
+/* fin Mapas */
 
 #lista-empleados .media-left img, #lista-vehiculos .media-left img {
 	width: 64px;
@@ -86,7 +82,7 @@ h2.login {
 	padding-top: 14px
 }
 
-/***************** Override de listas *************************/
+/* Override de listas */
 .list-group .list-group-item.avatar .secondary-content {
 	top: 25px !important;
 }
@@ -94,10 +90,10 @@ h2.login {
 .btn-viaje-editar {
 	right: 130px !important;
 }
+/* fin Override de listas */
 
-/******************** Medias *****************************************/
-
-/* sm ( <= 767px) */
+/* Medias */
+/* xs ( <= 767px) */
 @media (max-width: 767px) {
 	.list-group-item.avatar {
 		overflow: auto;
@@ -110,6 +106,7 @@ h2.login {
 
 	}
 }
+/*sm (>=768px)*/
 @media (min-width: 768px) {
 	.container {
 		max-width: 970px
@@ -118,3 +115,4 @@ h2.login {
 		width: 750px
 	}
 }
+/* fin Medias */
