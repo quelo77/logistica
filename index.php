@@ -7,7 +7,7 @@
 
 <!doctype html>
 <html lang="es">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <?php require_once('source/inc/head.php'); ?>
 
 <body>
