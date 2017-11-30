@@ -6,13 +6,13 @@ var Mantenimientos = function () {
         cargarMantenimientosLista();
     };
 
-    this.cargarAlarmas = function() {
+    /*this.cargarAlarmas = function() {
         cargarAlarmas();
-    };
+    };*/
 
     /* Métodos privados */
 
-    function cargarAlarmas() {
+    /*function cargarAlarmas() {
         if(window.location.href.toString().toLowerCase().indexOf("login") > 0) return;
         
         $.ajax({
@@ -29,7 +29,7 @@ var Mantenimientos = function () {
                 });
             }
         });
-    }
+    }*/
 
     function cargarMantenimientosLista() { 
         $.ajax({
