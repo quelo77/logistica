@@ -15,7 +15,7 @@
 <body>
 	<?php require_once('source/inc/ga.php'); ?>
 	<?php require_once('source/views/shared/_header.php'); ?>
-	<div class="container margin-top-20">
+	<div class="container">
 		<!-- Contenido de pagina -->
 		<div class="row">
 			<div class="col-xs-12">

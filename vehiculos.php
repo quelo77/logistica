@@ -41,13 +41,13 @@
 		<div class="row">
 			<!-- boton nuevo vehiculo -->
 			<?php if($_SESSION['id_rol'] == 3) { ?> <!-- Botón de agregar Empleado sólo habilitado para rol Supervisor -->
-				<div class="col-xs-12 margin-top-10 margin-bottom-10">
-					<div class="text-center">
+				<div class="col-xs-12">
+					<p class="text-center">
 						<a href="#modalNuevoVehiculo" id="btn-nuevo-lista" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#modalNuevoVehiculo">
 							<i class="material-icons right">input</i>
 							Agregar nuevo
 						</a>
-					</div>
+					</p>
 				</div>
 			<?php } ?>
 			<!-- Fin boton nuevo vehiculo -->

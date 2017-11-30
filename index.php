@@ -13,7 +13,7 @@
 <body>
     <?php require_once('source/inc/ga.php'); ?>
     <?php require_once('source/views/shared/_header.php'); ?>
-    <div class=" tarjetas container margin-top-20">
+    <div class="container">
         <!-- Contenido de pagina -->
         <div class="row">
             <!-- Tarjeta Empleados -->

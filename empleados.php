@@ -37,19 +37,19 @@
 		</div>
 		<p>
 			<i class="material-icons prefix">print</i> 
-			<a class="btn-exportar-pdf link margin-bottom-10" href="#">Exportar listado a PDF</a>
+			<a class="btn-exportar-pdf link" href="#">Exportar listado a PDF</a>
 		</p>
 		<!-- Fin Filtro de busqueda -->
 		<div class="row">
 			<!-- boton nuevo empleado -->
 			<?php if($_SESSION['id_rol'] == 3) { ?> <!-- Botón de agregar Empleado sólo habilitado para rol Supervisor -->
-				<div class="col-xs-12 margin-top-10 margin-bottom-10">
-					<div class="text-center">
+				<div class="col-xs-12">
+					<p class="text-center">
 						<a href="#modalNuevoEmpleado" id="btn-nuevo-lista" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#modalNuevoEmpleado">
 							<i class="material-icons right">input</i>
 							Agregar nuevo empleado
 						</a>
-					</div>
+					</p>
 				</div>
 			<?php } ?>
 			<!-- Fin boton nuevo empleado -->
