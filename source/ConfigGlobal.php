@@ -13,25 +13,12 @@ class ConfigGlobal {
 					"host"			=> "localhost"
 				)
 			);
-		} else {
-			// Entorno Productivo
-			$entorno =  array(
-				"db" => array(
-					"nombre"    	=> "a5687295_db",
-					"usuario"   	=> "a5687295_pablo",
-					"password"  	=> "",
-					"host"			=> "mysql13.000webhost.com"
-				)
-			);
-		}
-
-		return $entorno;
+		}return $entorno;
 	}
 
 	public function normalizarTexto($input) {
 		if(!empty($input)) {
-			$texto = strtolower($input); // -->>> esto NO está funcionando!
-			$texto = ucfirst($input);  // Primer letra en mayuscula.
+			$texto = ucwords(strtolower($input));
 			return $texto;
 		}
 	}	
