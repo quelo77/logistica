@@ -17,22 +17,20 @@
 	<?php require_once('source/views/shared/_header.php'); ?>
 	<div class="container">
 		<div class="row">
-			<div class="col-12">
+			<div class="col-xs-12">
 				<h2 class="text-center">Empleados</h2>
 		<!-- Contenido de pagina -->
 		<!-- Filtro de busqueda -->
-				<div class="card mb-3">
-					<div class="card-body">
-						<form id="formularioListaFiltrada" class="form-inline">
-							<div class="form-group">
-								<div class="input-group">
-									<div class="input-group-addon"><i class="material-icons prefix">search</i></div>
-									<input id="icon_prefix" type="text" class="form-control validate" name="NOMBREEMPLEADO">
-								</div>
+				<div class="well">
+					<form id="formularioListaFiltrada" class="form-inline">
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon"><i class="material-icons prefix">search</i></div>
+								<input id="icon_prefix" type="text" class="form-control validate" name="NOMBREEMPLEADO">
 							</div>
-							<button type="submit" id="btn-lista-filtrada" class="btn btn-primary text-uppercase">Buscar Empleado</button>
-						</form>
-					</div>
+						</div>
+						<input type="submit" id="btn-lista-filtrada" value="Buscar Empleado" class="btn btn-primary text-uppercase">
+					</form>
 				</div>
 			</div>
 
@@ -45,7 +43,7 @@
 		<div class="row">
 			<!-- boton nuevo empleado -->
 			<?php if($_SESSION['id_rol'] == 3) { ?> <!-- Botón de agregar Empleado sólo habilitado para rol Supervisor -->
-				<div class="col-12">
+				<div class="col-xs-12">
 					<p class="text-center">
 						<a href="#modalNuevoEmpleado" id="btn-nuevo-lista" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#modalNuevoEmpleado">
 							<i class="material-icons right">input</i>
@@ -55,9 +53,9 @@
 				</div>
 			<?php } ?>
 			<!-- Fin boton nuevo empleado -->
-			<div class="col-12">
+			<div class="col-xs-12">
 				<!-- Lista Empleados --> 
-				<ul class="list-group mb-3" id="lista-empleados"></ul>
+				<ul class="list-group" id="lista-empleados"></ul>
 				<!-- Fin Lista Empleados -->
 			</div>
 		</div>
@@ -72,7 +70,7 @@
 				</div>
 				<div class="modal-body"></div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 					<button type="button" id="btn-nuevo-empleado" class="btn btn-primary">Agregar Nuevo Empleado</button>
 				</div>
 			</div>
@@ -90,7 +88,7 @@
 				</div>
 				<div class="modal-body"></div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 				</div>
 			</div>
 		</div>
@@ -107,7 +105,7 @@
 				</div>
 				<div class="modal-body"></div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 					<button type="button"id="btn-editar-empleado" class="btn btn-primary">Actualizar Empleado</button>
 				</div>
 			</div>
@@ -116,6 +114,7 @@
 	<!-- Fin Modal Editar de Empleado -->
 
 	<!-- Modal Cargando -->
+<!--
 	<div class="modal fade" id="modalCargando" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -125,6 +124,7 @@
 			</div>
 		</div>
 	</div>
+-->
 	<!-- Fin Modal Cargando -->
 
 	<!-- Fin Contenido de pagina -->

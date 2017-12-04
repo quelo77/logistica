@@ -32,7 +32,7 @@
 								<input id="icon_prefix" type="text" class="form-control validate" name="DOMINIO">
 							</div>
 						</div>
-						<button type="submit" id="btn-lista-filtrada" class="btn btn-primary text-uppercase">Buscar</button>
+						<input type="submit" id="btn-lista-filtrada" value="Buscar" class="btn btn-primary text-uppercase">
 					</form>
 				</div>
 			</div>
@@ -68,7 +68,7 @@
 				</div>
 				<div class="modal-body"></div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 					<button type="button" id="btn-nuevo-vehiculo" class="btn btn-primary">Agregar Nuevo Vehiculo</button>
 				</div>
 			</div>
@@ -86,7 +86,7 @@
 				</div>
 				<div class="modal-body"></div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 				</div>
 			</div>
 		</div>
@@ -103,7 +103,7 @@
 				</div>
 				<div class="modal-body"></div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 					<button type="button" id="btn-editar-vehiculo" class="btn btn-primary">Actualizar vehículo</button>
 				</div>
 			</div>

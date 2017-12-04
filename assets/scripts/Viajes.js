@@ -20,16 +20,16 @@ var Viajes = function() {
 		}).done(function() {
 			
 			cargarEventos();
-			ponerFocoEnViajeEditar();
+//			ponerFocoEnViajeEditar();
 		});    	
     }
 
-    function ponerFocoEnViajeEditar() {
-		// Se pone el foco en el primer campo del formulario de editar Viaje
-		$('.btn-editar-viaje-lista').on('click', function() { 
-			//$('#nombre').focus(); TODO
-		});
-    }    
+//    function ponerFocoEnViajeEditar() {
+//		// Se pone el foco en el primer campo del formulario de editar Viaje
+//		$('.btn-editar-viaje-lista').on('click', function() { 
+//			//$('#nombre').focus(); TODO
+//		});
+//    }    
 
     function cargarEventos() {
         btnViajeNuevoLista();

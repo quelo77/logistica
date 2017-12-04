@@ -17,14 +17,12 @@ var Empleados = function () {
             e.preventDefault();
             var formData = $('#formularioListaFiltrada').serialize();
             $.ajax({
-                beforeSend: function() {
-                    $('#modalCargando').modal('show');
-                },
                 url: 'source/ABM/empleados/cargarEmpleadosListaFiltrada.php',
                 method: 'post',
                 data: formData,
                 dataType: 'html',
                 success: function(data) {
+					$('#modalCargando').modal('hide');
                     $('#lista-empleados').html(data);
                 }
             }).done(function() {    
@@ -38,13 +36,11 @@ var Empleados = function () {
 
 	function cargarEmpleadosLista() { 
 		$.ajax({
-            beforeSend: function() {
-                $('#modalCargando').modal('show');
-            },
 		    url: 'source/ABM/empleados/cargarEmpleadosLista.php',
 		    method: 'post',
 		    dataType: 'html',
 		    success: function(data) {
+				$('#modalCargando').modal('hide');
 		        $('#lista-empleados').html(data);
 		    }
 		}).done(function() {	
