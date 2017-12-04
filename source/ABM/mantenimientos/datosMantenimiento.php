@@ -10,14 +10,14 @@
 ?>
 
 <div class="row">
-	<div class="col-xs-12 col-sm-6">
+	<div class="col-12 col-sm-6">
 		<ul class="list-group">
 			<li class="list-group-item">ID: <?php echo $mantenimiento["ID"]; ?></li>
 			<li class="list-group-item">Dominio: <?php echo $mantenimiento["DOMINIO_VEHICULO"]; ?></li>
 			<li class="list-group-item">Fecha: <?php echo $mantenimiento["FECHA"]; ?></li>
 		</ul>		
 	</div>
-	<div class="col-xs-12 col-sm-6">
+	<div class="col-12 col-sm-6">
 		<ul class="list-group">
 			<li class="list-group-item">Costo: $<?php echo $mantenimiento["COSTO"]; ?>.-</li>
 			<li class="list-group-item">Kilometros: <?php echo $mantenimiento["KM_VEHICULO"]; ?></li>
@@ -26,7 +26,7 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-xs-12">
+	<div class="col-12">
 		<ul class="list-group">
 	   		<li class="list-group-item">Trabajo realizado: <?php echo $mantenimiento["COMENTARIO"]; ?></li>
 		</ul>

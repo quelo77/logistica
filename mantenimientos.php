@@ -17,13 +17,13 @@
     <?php require_once('source/views/shared/_header.php'); ?>
     <div class="container">
         <div class="row">
-			<div class="col-xs-12">
+			<div class="col-12">
         		<h2 class="text-center">Mantenimientos</h2>
 			</div>
         <!-- Contenido de pagina -->
             <!-- boton nuevo mantenimiento -->
             <?php if($_SESSION['id_rol'] == 3) { ?> <!-- Botón de agregar mantenimiento sólo habilitado para rol Supervisor -->
-                <div class="col-xs-12">
+                <div class="col-12">
                     <p class="text-center">
                         <a href="#modalNuevoMantenimiento" id="btn-nuevo-lista" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#modalNuevoMantenimiento">
 							<i class="material-icons right">input</i>
@@ -33,7 +33,7 @@
                 </div>
             <?php } ?>
             <!-- Fin boton nuevo mantenimiento -->
-            <div class="col-xs-12">
+            <div class="col-12">
                 <!-- Lista Mantenimientos -->
                 <ul class="list-group" id="lista-mantenimientos"></ul>
                 <!-- Fin Lista mantenimientos -->

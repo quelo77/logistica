@@ -19,7 +19,7 @@
 		<!-- Contenido de pagina -->
 		<!-- Filtro de busqueda -->
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-12">
 				<h2 class="text-center">Vehículos</h2>
 				<div class="well">
 					<form id="formularioListaFiltrada" class="form-inline">
@@ -41,7 +41,7 @@
 		<div class="row">
 			<!-- boton nuevo vehiculo -->
 			<?php if($_SESSION['id_rol'] == 3) { ?> <!-- Botón de agregar Empleado sólo habilitado para rol Supervisor -->
-				<div class="col-xs-12">
+				<div class="col-12">
 					<p class="text-center">
 						<a href="#modalNuevoVehiculo" id="btn-nuevo-lista" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#modalNuevoVehiculo">
 							<i class="material-icons right">input</i>
@@ -51,7 +51,7 @@
 				</div>
 			<?php } ?>
 			<!-- Fin boton nuevo vehiculo -->
-			<div class="col-xs-12">
+			<div class="col-12">
 				<!-- Lista Vehiculos -->
 				<ul class="list-group" id="lista-vehiculos"></ul>
 				<!-- Fin Lista Vehiculos -->

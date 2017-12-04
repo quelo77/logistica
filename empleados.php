@@ -17,7 +17,7 @@
 	<?php require_once('source/views/shared/_header.php'); ?>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-12">
 				<h2 class="text-center">Empleados</h2>
 		<!-- Contenido de pagina -->
 		<!-- Filtro de busqueda -->
@@ -43,7 +43,7 @@
 		<div class="row">
 			<!-- boton nuevo empleado -->
 			<?php if($_SESSION['id_rol'] == 3) { ?> <!-- Botón de agregar Empleado sólo habilitado para rol Supervisor -->
-				<div class="col-xs-12">
+				<div class="col-12">
 					<p class="text-center">
 						<a href="#modalNuevoEmpleado" id="btn-nuevo-lista" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#modalNuevoEmpleado">
 							<i class="material-icons right">input</i>
@@ -53,7 +53,7 @@
 				</div>
 			<?php } ?>
 			<!-- Fin boton nuevo empleado -->
-			<div class="col-xs-12">
+			<div class="col-12">
 				<!-- Lista Empleados --> 
 				<ul class="list-group" id="lista-empleados"></ul>
 				<!-- Fin Lista Empleados -->
