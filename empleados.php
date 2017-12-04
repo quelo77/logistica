@@ -29,7 +29,7 @@
 								<input id="icon_prefix" type="text" class="form-control validate" name="NOMBREEMPLEADO">
 							</div>
 						</div>
-						<label for="icon_prefix"><a href="#!" id="btn-lista-filtrada" class="btn btn-primary text-uppercase">Buscar Empleado</a></label>
+						<input type="submit" id="btn-lista-filtrada" value="Buscar Empleado" class="btn btn-primary text-uppercase">
 					</form>
 				</div>
 			</div>
