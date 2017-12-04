@@ -21,16 +21,18 @@
 				<h2 class="text-center">Empleados</h2>
 		<!-- Contenido de pagina -->
 		<!-- Filtro de busqueda -->
-				<div class="well">
-					<form id="formularioListaFiltrada" class="form-inline">
-						<div class="form-group">
-							<div class="input-group">
-								<div class="input-group-addon"><i class="material-icons prefix">search</i></div>
-								<input id="icon_prefix" type="text" class="form-control validate" name="NOMBREEMPLEADO">
+				<div class="card mb-3">
+					<div class="card-body">
+						<form id="formularioListaFiltrada" class="form-inline">
+							<div class="form-group">
+								<div class="input-group">
+									<div class="input-group-addon"><i class="material-icons prefix">search</i></div>
+									<input id="icon_prefix" type="text" class="form-control validate" name="NOMBREEMPLEADO">
+								</div>
 							</div>
-						</div>
-						<label for="icon_prefix"><a href="#!" id="btn-lista-filtrada" class="btn btn-primary text-uppercase">Buscar Empleado</a></label>
-					</form>
+							<button type="submit" id="btn-lista-filtrada" class="btn btn-primary text-uppercase">Buscar Empleado</button>
+						</form>
+					</div>
 				</div>
 			</div>
 
@@ -55,7 +57,7 @@
 			<!-- Fin boton nuevo empleado -->
 			<div class="col-12">
 				<!-- Lista Empleados --> 
-				<ul class="list-group" id="lista-empleados"></ul>
+				<ul class="list-group mb-3" id="lista-empleados"></ul>
 				<!-- Fin Lista Empleados -->
 			</div>
 		</div>
