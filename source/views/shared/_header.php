@@ -1,22 +1,17 @@
-<nav class="navbar navbar-inverse navbar-global navbar-static-top">
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary navbar-static-top">
 	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarContenido" aria-expanded="false">
-				<span class="sr-only">Abrir navegación</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a href="index.php" class="navbar-brand">Logistica S.A.</a>
-		</div>
+		<a href="index.php" class="navbar-brand">Logistica S.A.</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Abrir navegación">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 		<div id="navbarContenido" class="collapse navbar-collapse">
-			<div class="navbar-text">
+			<div class="navbar-text mr-auto">
 				<i class="material-icons">perm_identity</i>
 				<strong>Bienvenido, <?php echo $_SESSION['nombre']; ?></strong>
 			</div>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#!">Mi Perfil</a></li>
-				<li><a href="salir.php"><i class="material-icons">settings_power</i>Salir</a></li>
+			<ul class="nav navbar-nav">
+				<li class="nav-item"><a href="#!" class="nav-link">Mi Perfil</a></li>
+				<li class="nav-item"><a href="salir.php" class="nav-link"><i class="material-icons">settings_power</i>Salir</a></li>
 			</ul>
 		</div>
 	</div>
