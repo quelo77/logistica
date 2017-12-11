@@ -1,7 +1,7 @@
 <?php
-require_once ('../lib/jpgraph/jpgraph.php');
-require_once ('../lib/jpgraph/jpgraph_pie.php');
-require_once ('../lib/jpgraph/jpgraph_pie3d.php');
+// require_once ('../lib/jpgraph/jpgraph.php');
+// require_once ('../lib/jpgraph/jpgraph_pie.php');
+// require_once ('../lib/jpgraph/jpgraph_pie3d.php');
 include_once ('../database/DBManager.php');
 if (empty($_SESSION['usuario'])) header("Location: login.php");
 $db = new DBManager();
@@ -13,7 +13,7 @@ $acopladosUsos = array();
 foreach($acoplados as $acoplado) {
 	array_push($acopladosNombres, $acoplado["DESCRIPCION"]);
 	array_push($acopladosUsos, $acoplado["VECES"]);
-}
+} 
 
 $data = $acopladosUsos;
 
