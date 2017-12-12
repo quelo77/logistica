@@ -92,7 +92,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> 
 	<!-- Fin Modal Ver Datos de Empleado -->
 
 	<!-- Modal Editar Empleado -->
