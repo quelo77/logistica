@@ -21,7 +21,7 @@
     <?php require_once('source/views/shared/_header.php'); ?>
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-12">
         		<h2 class="text-center">Seguimientos</h2>
         <!-- Contenido de pagina -->
                 <!-- Lista Empleados -->
@@ -55,7 +55,7 @@
             		<div id="contenedor-mapa"></div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 				</div>
 			</div>
 		</div>

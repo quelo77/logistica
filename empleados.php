@@ -70,7 +70,7 @@
 				</div>
 				<div class="modal-body"></div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 					<button type="button" id="btn-nuevo-empleado" class="btn btn-primary">Agregar Nuevo Empleado</button>
 				</div>
 			</div>
@@ -88,7 +88,7 @@
 				</div>
 				<div class="modal-body"></div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 				</div>
 			</div>
 		</div>
@@ -105,7 +105,7 @@
 				</div>
 				<div class="modal-body"></div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 					<button type="button"id="btn-editar-empleado" class="btn btn-primary">Actualizar Empleado</button>
 				</div>
 			</div>
@@ -114,6 +114,7 @@
 	<!-- Fin Modal Editar de Empleado -->
 
 	<!-- Modal Cargando -->
+<!--
 	<div class="modal fade" id="modalCargando" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -123,6 +124,7 @@
 			</div>
 		</div>
 	</div>
+-->
 	<!-- Fin Modal Cargando -->
 
 	<!-- Fin Contenido de pagina -->

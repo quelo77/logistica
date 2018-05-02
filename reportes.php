@@ -17,7 +17,7 @@
     <div class="container">
         <!-- Lista de Reportes -->
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-12">
         		<h2 class="text-center">Reportes</h2>
                 
                 <!--column chart-->

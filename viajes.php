@@ -18,12 +18,12 @@
 	<div class="container">
 		<!-- Contenido de pagina -->
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-12">
 				<h2 class="text-center">Viajes</h2>
 			</div>
 			<!-- boton nuevo viaje -->
 			<?php if($_SESSION['id_rol'] == 3) { ?> <!-- Botón de agregar Viaje sólo habilitado para rol Supervisor -->
-				<div class="col-xs-12">
+				<div class="col-12">
 					<p class="text-center">
 						<a href="#modalNuevoViaje" id="btn-nuevo-viaje-lista" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#modalNuevoViaje">
 							<i class="material-icons right">input</i>
@@ -33,7 +33,7 @@
 				</div>
 			<?php } ?>
 			<!-- Fin boton nuevo viaje -->
-			<div class="col-xs-12">
+			<div class="col-12">
 				<!-- Lista Viajes -->
 				<ul class="list-group" id="lista-viajes"></ul>
 				<!-- Fin Lista Viajes -->
@@ -52,7 +52,7 @@
 				</div>
 				<div class="modal-body"></div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 					<button type="button" id="btn-nuevo-viaje" class="btn btn-primary">Agregar Nuevo Viaje</button>
 				</div>
 			</div>
@@ -70,7 +70,7 @@
 				</div>
 				<div class="modal-body"></div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 					<button type="button" id="btn-editar-viaje" class="btn btn-primary">Actualizar Viaje</button>
 				</div>
 			</div>
@@ -88,7 +88,7 @@
 				</div>
 				<div class="modal-body"></div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 				</div>
 			</div>
 		</div>

@@ -26,7 +26,7 @@
         	echo '<img  src="imagenes/qr/Camion-qr/' . $file . '" alt="" >'
  ?>
 <div class="row">
-	<div class="col-xs-12 col-sm-6">
+	<div class="col-12 col-sm-6">
 		<ul class="list-group">
 			<li class="list-group-item">Id viaje: <?php echo $viaje["ID"]; ?></li>
 			<li class="list-group-item">Direccion: <?php echo $viaje["DIRECCION"]; ?></li>
@@ -37,7 +37,7 @@
 			<li class="list-group-item">Acoplado Tipo: <?php echo $viaje["ACOPLADO"]; ?></li>
 		</ul>		
 	</div>
-	<div class="col-xs-12 col-sm-6">
+	<div class="col-12 col-sm-6">
 		<ul class="list-group">
 			<li class="list-group-item">Cantidad de Kilometros: <?php echo $viaje["CANT_KILOMETROS"]; ?></li>
 			<li class="list-group-item">Chofer: <?php echo $viaje["CHOFER_NOMBRE"]; echo " "; echo $viaje["CHOFER_APELLIDO"]; ?></li>

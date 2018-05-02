@@ -14,12 +14,10 @@ $empleados = $db->obtenerEmpleados();
 
     <li class="list-group-item avatar">
 		<div class="media">
-			<div class="media-left">
-        		<img src="assets/imagenes/avatares/empleados/<?php echo $avatar; ?>.jpg" alt="<?php echo $avatar; ?>" class="img-circle">
-			</div>
+			<img src="assets/imagenes/avatares/empleados/<?php echo $avatar; ?>.jpg" alt="<?php echo $avatar; ?>" class="rounded-circle mr-3">
 			<div class="media-body">
 				<h4 class="media-heading"><?php echo $empleado["NOMBRE"]; ?>&nbsp;<?php echo $empleado["APELLIDO"]; ?></h4>
-				<p class="text-muted"><?php echo $empleado["CARGO"]; ?> <span class="badge"><?php echo $empleado["ROL"]; ?></span>
+				<p class="text-muted"><?php echo $empleado["CARGO"]; ?> <span class="badge badge-secondary"><?php echo $empleado["ROL"]; ?></span>
 				</p>
 				<p><a class="btn-datos-empleado link" data-id="<?php echo $empleado["ID"]; ?>" href="#modalDatosEmpleado" data-toggle="modal" data-target="#modalDatosEmpleado">Ver perfil completo</a></p>
 				<!-- 
@@ -28,7 +26,7 @@ $empleados = $db->obtenerEmpleados();
 				-->
 			</div>
 			<?php if($_SESSION['id_rol'] == 3) { ?>
-			<div class="media-right">
+			<div class="ml-3">
 				<!-- Eliminar -->
 				<a href="#!" data-id-eliminar="<?php echo $empleado["ID"]; ?>" class="btn-baja-empleado btn btn-primary tooltipped" data-placement="right" title="Eliminar">
 					<i class="material-icons">delete</i>
